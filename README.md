@@ -6,6 +6,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 
 - [BASIC](basic/) - 1 example(s)
 - [Fortran](fortran/) - 1 example(s)
+- [Go](go/) - 1 example(s)
 - [Java](java/) - 1 example(s)
 - [Pascal](pascal/) - 1 example(s)
 
@@ -24,4 +25,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2025-12-06 16:38:22*
+*Last generated: 2025-12-06 22:15:09*
