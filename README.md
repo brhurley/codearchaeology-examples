@@ -5,12 +5,16 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 ## Languages
 
 - [BASIC](basic/) - 1 example(s)
+- [Dart](dart/) - 1 example(s)
+- [Elixir](elixir/) - 1 example(s)
 - [Fortran](fortran/) - 1 example(s)
 - [Go](go/) - 1 example(s)
 - [Java](java/) - 1 example(s)
+- [Julia](julia/) - 1 example(s)
 - [Kotlin](kotlin/) - 1 example(s)
 - [Pascal](pascal/) - 1 example(s)
 - [Rust](rust/) - 1 example(s)
+- [Typescript](typescript/) - 1 example(s)
 
 ## About
 
@@ -27,4 +31,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2025-12-06 23:15:00*
+*Last generated: 2025-12-08 00:50:17*
