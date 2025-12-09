@@ -14,6 +14,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Kotlin](kotlin/) - 1 example(s)
 - [Pascal](pascal/) - 1 example(s)
 - [Rust](rust/) - 1 example(s)
+- [Swift](swift/) - 1 example(s)
 - [Typescript](typescript/) - 1 example(s)
 
 ## About
@@ -31,4 +32,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2025-12-08 00:50:17*
+*Last generated: 2025-12-09 12:32:56*
