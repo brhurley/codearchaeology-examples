@@ -15,6 +15,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Kotlin](kotlin/) - 1 example(s)
 - [Nim](nim/) - 1 example(s)
 - [Pascal](pascal/) - 1 example(s)
+- [Python](python/) - 1 example(s)
 - [Rust](rust/) - 1 example(s)
 - [Swift](swift/) - 1 example(s)
 - [Typescript](typescript/) - 1 example(s)
@@ -35,4 +36,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2025-12-12 09:07:23*
+*Last generated: 2025-12-13 09:02:09*
