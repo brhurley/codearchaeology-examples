@@ -5,7 +5,7 @@ Your first TypeScript program - the classic Hello World example with Docker setu
 ## Files
 
 - `example.ts` - typescript source code
-- `example.js` - javascript source code
+- `hello.js` - javascript source code
 
 ## Source
 
