@@ -23,6 +23,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Python](python/) - 1 example(s)
 - [R](r/) - 1 example(s)
 - [Rust](rust/) - 1 example(s)
+- [Scala](scala/) - 1 example(s)
 - [Swift](swift/) - 1 example(s)
 - [Typescript](typescript/) - 1 example(s)
 - [Zig](zig/) - 1 example(s)
@@ -42,4 +43,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2025-12-19 09:05:01*
+*Last generated: 2025-12-20 09:09:16*
