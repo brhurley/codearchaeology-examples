@@ -13,6 +13,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Dart](dart/) - 1 example(s)
 - [Elixir](elixir/) - 1 example(s)
 - [Fortran](fortran/) - 1 example(s)
+- [Fsharp](fsharp/) - 1 example(s)
 - [Go](go/) - 1 example(s)
 - [Java](java/) - 1 example(s)
 - [Javascript](javascript/) - 1 example(s)
@@ -44,4 +45,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2025-12-21 09:06:08*
+*Last generated: 2025-12-22 09:04:28*
