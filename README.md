@@ -7,6 +7,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [BASIC](basic/) - 1 example(s)
 - [C](c/) - 1 example(s)
 - [Clojure](clojure/) - 1 example(s)
+- [Cobol](cobol/) - 1 example(s)
 - [Cpp](cpp/) - 1 example(s)
 - [Crystal](crystal/) - 1 example(s)
 - [Csharp](csharp/) - 1 example(s)
@@ -46,4 +47,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2025-12-23 09:04:21*
+*Last generated: 2025-12-24 09:05:38*
