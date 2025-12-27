@@ -22,9 +22,11 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Javascript](javascript/) - 1 example(s)
 - [Julia](julia/) - 1 example(s)
 - [Kotlin](kotlin/) - 1 example(s)
+- [Modula-2](modula-2/) - 1 example(s)
 - [Nim](nim/) - 1 example(s)
 - [Pascal](pascal/) - 1 example(s)
 - [Php](php/) - 1 example(s)
+- [Pl-i](pl-i/) - 1 example(s)
 - [Python](python/) - 1 example(s)
 - [R](r/) - 1 example(s)
 - [Rust](rust/) - 1 example(s)
@@ -48,4 +50,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2025-12-25 09:04:19*
+*Last generated: 2025-12-27 09:08:25*

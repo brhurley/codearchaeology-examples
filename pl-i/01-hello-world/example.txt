@@ -1,0 +1,20 @@
+FROM ubuntu:24.04
+
+RUN apt-get update && apt-get install -y wget ca-certificates
+
+# Download and install Iron Spring PL/I compiler
+RUN wget -q http://www.iron-spring.com/plic-linux-1.4.0.tar.gz && \
+    tar -xzf plic-linux-1.4.0.tar.gz && \
+    mv plic /usr/local/bin/ && \
+    mkdir -p /usr/local/lib/pli && \
+    mv lib/* /usr/local/lib/pli/ 2>/dev/null || true && \
+    rm -rf plic-linux-1.4.0.tar.gz
+
+ENV LD_LIBRARY_PATH=/usr/local/lib/pli:$LD_LIBRARY_PATH
+
+WORKDIR /app
+COPY hello.pli .
+
+RUN plic hello.pli
+
+CMD ["./hello"]
