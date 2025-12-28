@@ -5,6 +5,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 ## Languages
 
 - [Ada](ada/) - 1 example(s)
+- [Algol-68](algol-68/) - 1 example(s)
 - [BASIC](basic/) - 1 example(s)
 - [C](c/) - 1 example(s)
 - [Clojure](clojure/) - 1 example(s)
@@ -50,4 +51,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2025-12-27 09:08:25*
+*Last generated: 2025-12-28 09:06:35*
