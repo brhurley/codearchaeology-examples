@@ -30,6 +30,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Pascal](pascal/) - 1 example(s)
 - [Php](php/) - 1 example(s)
 - [Pl-i](pl-i/) - 1 example(s)
+- [Prolog](prolog/) - 1 example(s)
 - [Python](python/) - 1 example(s)
 - [R](r/) - 1 example(s)
 - [Rust](rust/) - 1 example(s)
@@ -55,4 +56,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2026-01-01 09:07:18*
+*Last generated: 2026-01-02 09:06:11*
