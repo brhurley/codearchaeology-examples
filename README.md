@@ -21,6 +21,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Fsharp](fsharp/) - 1 example(s)
 - [Go](go/) - 1 example(s)
 - [Groovy](groovy/) - 1 example(s)
+- [Icon](icon/) - 1 example(s)
 - [Java](java/) - 1 example(s)
 - [Javascript](javascript/) - 1 example(s)
 - [Julia](julia/) - 1 example(s)
@@ -56,4 +57,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2026-01-02 09:06:11*
+*Last generated: 2026-01-03 09:07:11*
