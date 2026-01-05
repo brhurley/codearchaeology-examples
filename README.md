@@ -34,6 +34,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Prolog](prolog/) - 1 example(s)
 - [Python](python/) - 1 example(s)
 - [R](r/) - 1 example(s)
+- [Rexx](rexx/) - 1 example(s)
 - [Rust](rust/) - 1 example(s)
 - [Scala](scala/) - 1 example(s)
 - [Scheme](scheme/) - 1 example(s)
@@ -57,4 +58,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2026-01-03 09:07:11*
+*Last generated: 2026-01-05 09:05:33*
