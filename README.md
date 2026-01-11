@@ -32,12 +32,14 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Modula-2](modula-2/) - 1 example(s)
 - [Nim](nim/) - 1 example(s)
 - [Pascal](pascal/) - 1 example(s)
+- [Perl](perl/) - 1 example(s)
 - [Php](php/) - 1 example(s)
 - [Pl-i](pl-i/) - 1 example(s)
 - [Prolog](prolog/) - 1 example(s)
 - [Python](python/) - 1 example(s)
 - [R](r/) - 1 example(s)
 - [Rexx](rexx/) - 1 example(s)
+- [Ruby](ruby/) - 1 example(s)
 - [Rust](rust/) - 1 example(s)
 - [Scala](scala/) - 1 example(s)
 - [Scheme](scheme/) - 1 example(s)
@@ -62,4 +64,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2026-01-09 09:04:30*
+*Last generated: 2026-01-10 21:35:37*
