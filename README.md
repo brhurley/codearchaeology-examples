@@ -16,6 +16,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Crystal](crystal/) - 1 example(s)
 - [Csharp](csharp/) - 1 example(s)
 - [Dart](dart/) - 1 example(s)
+- [Delphi](delphi/) - 1 example(s)
 - [Elixir](elixir/) - 1 example(s)
 - [Forth](forth/) - 1 example(s)
 - [Fortran](fortran/) - 1 example(s)
@@ -64,4 +65,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2026-01-10 21:35:37*
+*Last generated: 2026-01-11 09:03:50*
