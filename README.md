@@ -20,6 +20,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Dylan](dylan/) - 1 example(s)
 - [Eiffel](eiffel/) - 1 example(s)
 - [Elixir](elixir/) - 1 example(s)
+- [Erlang](erlang/) - 1 example(s)
 - [Forth](forth/) - 1 example(s)
 - [Fortran](fortran/) - 1 example(s)
 - [Fsharp](fsharp/) - 1 example(s)
@@ -70,4 +71,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2026-01-17 09:06:49*
+*Last generated: 2026-01-18 09:04:05*
