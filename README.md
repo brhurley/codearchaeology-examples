@@ -51,6 +51,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Scala](scala/) - 1 example(s)
 - [Scheme](scheme/) - 1 example(s)
 - [Smalltalk](smalltalk/) - 1 example(s)
+- [Snobol](snobol/) - 1 example(s)
 - [Swift](swift/) - 1 example(s)
 - [Tcl](tcl/) - 1 example(s)
 - [Typescript](typescript/) - 1 example(s)
@@ -71,4 +72,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2026-01-18 09:04:05*
+*Last generated: 2026-01-19 09:08:12*
