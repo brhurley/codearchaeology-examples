@@ -4,6 +4,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 
 ## Languages
 
+- [Abap](abap/) - 1 example(s)
 - [Ada](ada/) - 1 example(s)
 - [Algol-68](algol-68/) - 1 example(s)
 - [Apl](apl/) - 1 example(s)
@@ -73,4 +74,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2026-01-20 09:03:18*
+*Last generated: 2026-01-21 09:11:47*
