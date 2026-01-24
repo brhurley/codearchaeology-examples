@@ -6,6 +6,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 
 - [Abap](abap/) - 1 example(s)
 - [Ada](ada/) - 1 example(s)
+- [Algol-60](algol-60/) - 1 example(s)
 - [Algol-68](algol-68/) - 1 example(s)
 - [Apl](apl/) - 1 example(s)
 - [Assembly](assembly/) - 1 example(s)
@@ -55,6 +56,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Scheme](scheme/) - 1 example(s)
 - [Smalltalk](smalltalk/) - 1 example(s)
 - [Snobol](snobol/) - 1 example(s)
+- [Standard-ml](standard-ml/) - 1 example(s)
 - [Swift](swift/) - 1 example(s)
 - [Tcl](tcl/) - 1 example(s)
 - [Typescript](typescript/) - 1 example(s)
@@ -75,4 +77,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2026-01-22 09:04:11*
+*Last generated: 2026-01-24 09:08:06*
