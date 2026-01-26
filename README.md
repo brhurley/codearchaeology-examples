@@ -33,6 +33,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Groovy](groovy/) - 1 example(s)
 - [Haskell](haskell/) - 1 example(s)
 - [Icon](icon/) - 1 example(s)
+- [Intercal](intercal/) - 1 example(s)
 - [J](j/) - 1 example(s)
 - [Java](java/) - 1 example(s)
 - [Javascript](javascript/) - 1 example(s)
@@ -78,4 +79,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2026-01-25 09:06:53*
+*Last generated: 2026-01-26 09:07:23*
