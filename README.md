@@ -12,6 +12,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Assembly](assembly/) - 1 example(s)
 - [Awk](awk/) - 1 example(s)
 - [BASIC](basic/) - 1 example(s)
+- [Befunge](befunge/) - 1 example(s)
 - [Brainfuck](brainfuck/) - 1 example(s)
 - [C](c/) - 1 example(s)
 - [Clojure](clojure/) - 1 example(s)
@@ -79,4 +80,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2026-01-26 09:07:23*
+*Last generated: 2026-01-27 09:04:44*
