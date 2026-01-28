@@ -63,6 +63,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Swift](swift/) - 1 example(s)
 - [Tcl](tcl/) - 1 example(s)
 - [Typescript](typescript/) - 1 example(s)
+- [Whitespace](whitespace/) - 1 example(s)
 - [Zig](zig/) - 1 example(s)
 
 ## About
@@ -80,4 +81,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2026-01-27 09:04:44*
+*Last generated: 2026-01-28 09:13:26*
