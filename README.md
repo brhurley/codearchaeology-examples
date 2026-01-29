@@ -40,6 +40,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Javascript](javascript/) - 1 example(s)
 - [Julia](julia/) - 1 example(s)
 - [Kotlin](kotlin/) - 1 example(s)
+- [Lolcode](lolcode/) - 1 example(s)
 - [Lua](lua/) - 1 example(s)
 - [Modula-2](modula-2/) - 1 example(s)
 - [Nim](nim/) - 1 example(s)
@@ -81,4 +82,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2026-01-28 09:13:26*
+*Last generated: 2026-01-29 09:04:31*
