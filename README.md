@@ -59,6 +59,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Rust](rust/) - 1 example(s)
 - [Scala](scala/) - 1 example(s)
 - [Scheme](scheme/) - 1 example(s)
+- [Shakespeare](shakespeare/) - 1 example(s)
 - [Smalltalk](smalltalk/) - 1 example(s)
 - [Snobol](snobol/) - 1 example(s)
 - [Standard-ml](standard-ml/) - 1 example(s)
@@ -83,4 +84,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2026-01-30 09:07:02*
+*Last generated: 2026-01-31 09:06:43*
