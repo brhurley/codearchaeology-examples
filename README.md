@@ -15,6 +15,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Befunge](befunge/) - 1 example(s)
 - [Brainfuck](brainfuck/) - 1 example(s)
 - [C](c/) - 1 example(s)
+- [Carbon](carbon/) - 1 example(s)
 - [Clojure](clojure/) - 1 example(s)
 - [Cobol](cobol/) - 1 example(s)
 - [Common-lisp](common-lisp/) - 1 example(s)
@@ -85,4 +86,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2026-02-07 09:10:28*
+*Last generated: 2026-02-07 17:00:57*
