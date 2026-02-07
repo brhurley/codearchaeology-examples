@@ -43,6 +43,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Lolcode](lolcode/) - 1 example(s)
 - [Lua](lua/) - 1 example(s)
 - [Modula-2](modula-2/) - 1 example(s)
+- [Mojo](mojo/) - 1 example(s)
 - [Nim](nim/) - 1 example(s)
 - [Ocaml](ocaml/) - 1 example(s)
 - [Pascal](pascal/) - 1 example(s)
@@ -84,4 +85,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2026-01-31 09:06:43*
+*Last generated: 2026-02-07 09:10:28*
