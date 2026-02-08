@@ -33,6 +33,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Fsharp](fsharp/) - 1 example(s)
 - [Go](go/) - 1 example(s)
 - [Groovy](groovy/) - 1 example(s)
+- [Hare](hare/) - 1 example(s)
 - [Haskell](haskell/) - 1 example(s)
 - [Icon](icon/) - 1 example(s)
 - [Intercal](intercal/) - 1 example(s)
@@ -86,4 +87,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2026-02-07 17:00:57*
+*Last generated: 2026-02-08 09:17:58*
