@@ -58,6 +58,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [R](r/) - 1 example(s)
 - [Raku](raku/) - 1 example(s)
 - [Rexx](rexx/) - 1 example(s)
+- [Roc](roc/) - 1 example(s)
 - [Ruby](ruby/) - 1 example(s)
 - [Rust](rust/) - 1 example(s)
 - [Scala](scala/) - 1 example(s)
@@ -87,4 +88,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2026-02-08 09:17:58*
+*Last generated: 2026-02-11 09:37:55*
