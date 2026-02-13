@@ -31,6 +31,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Forth](forth/) - 1 example(s)
 - [Fortran](fortran/) - 1 example(s)
 - [Fsharp](fsharp/) - 1 example(s)
+- [Gleam](gleam/) - 1 example(s)
 - [Go](go/) - 1 example(s)
 - [Groovy](groovy/) - 1 example(s)
 - [Hare](hare/) - 1 example(s)
@@ -70,6 +71,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Swift](swift/) - 1 example(s)
 - [Tcl](tcl/) - 1 example(s)
 - [Typescript](typescript/) - 1 example(s)
+- [Vale](vale/) - 1 example(s)
 - [Whitespace](whitespace/) - 1 example(s)
 - [Zig](zig/) - 1 example(s)
 
@@ -88,4 +90,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2026-02-11 09:37:55*
+*Last generated: 2026-02-13 09:18:39*
