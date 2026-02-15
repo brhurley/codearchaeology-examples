@@ -49,6 +49,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Mojo](mojo/) - 1 example(s)
 - [Nim](nim/) - 1 example(s)
 - [Ocaml](ocaml/) - 1 example(s)
+- [Odin](odin/) - 1 example(s)
 - [Pascal](pascal/) - 1 example(s)
 - [Perl](perl/) - 1 example(s)
 - [Php](php/) - 1 example(s)
@@ -91,4 +92,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2026-02-14 09:16:39*
+*Last generated: 2026-02-15 09:15:56*
