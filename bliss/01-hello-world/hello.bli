@@ -1,0 +1,13 @@
+MODULE hello =
+BEGIN
+
+EXTERNAL ROUTINE
+    print_hello;
+
+GLOBAL ROUTINE hello_world : NOVALUE =
+BEGIN
+    print_hello()
+END;
+
+END
+ELUDOM
