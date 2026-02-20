@@ -1,2 +1,2 @@
-	OUTPUT = "Hello, World" CHAR(33)
+	OUTPUT = "Hello, World!"
 END

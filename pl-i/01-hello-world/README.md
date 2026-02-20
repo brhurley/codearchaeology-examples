@@ -5,7 +5,6 @@ Your first PL/I program - the classic Hello World example with Docker setup usin
 ## Files
 
 - `hello.pli` - pli source code
-- `example.txt` - dockerfile source code
 - `hello.c` - c source code
 
 ## Source

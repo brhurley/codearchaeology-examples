@@ -13,6 +13,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Awk](awk/) - 1 example(s)
 - [BASIC](basic/) - 1 example(s)
 - [Befunge](befunge/) - 1 example(s)
+- [Bliss](bliss/) - 1 example(s)
 - [Brainfuck](brainfuck/) - 1 example(s)
 - [C](c/) - 1 example(s)
 - [Carbon](carbon/) - 1 example(s)
@@ -48,6 +49,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Matlab](matlab/) - 1 example(s)
 - [Modula-2](modula-2/) - 1 example(s)
 - [Mojo](mojo/) - 1 example(s)
+- [Mumps](mumps/) - 1 example(s)
 - [Nim](nim/) - 1 example(s)
 - [Ocaml](ocaml/) - 1 example(s)
 - [Odin](odin/) - 1 example(s)
@@ -62,6 +64,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Raku](raku/) - 1 example(s)
 - [Rexx](rexx/) - 1 example(s)
 - [Roc](roc/) - 1 example(s)
+- [Rpg](rpg/) - 1 example(s)
 - [Ruby](ruby/) - 1 example(s)
 - [Rust](rust/) - 1 example(s)
 - [Scala](scala/) - 1 example(s)
@@ -93,4 +96,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2026-02-16 09:19:11*
+*Last generated: 2026-02-20 09:21:39*

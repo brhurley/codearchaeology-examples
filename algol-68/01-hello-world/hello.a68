@@ -1,4 +1,4 @@
 BEGIN
   print("Hello, World!");
-  print(newline)
+  print(new line)
 END

@@ -1,4 +1,4 @@
 v
->92*"!dlroW ,olleH"v
-                   v
-       @,+*52_,#!:<
+>"!dlroW ,olleH"v
+                v
+          @_,#!:<
