@@ -46,6 +46,7 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Kotlin](kotlin/) - 1 example(s)
 - [Lolcode](lolcode/) - 1 example(s)
 - [Lua](lua/) - 1 example(s)
+- [Malbolge](malbolge/) - 1 example(s)
 - [Matlab](matlab/) - 1 example(s)
 - [Modula-2](modula-2/) - 1 example(s)
 - [Mojo](mojo/) - 1 example(s)
@@ -96,4 +97,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2026-02-20 09:21:39*
+*Last generated: 2026-02-22 09:30:45*
