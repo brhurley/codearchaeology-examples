@@ -1,0 +1,21 @@
+BEGIN
+  # Constants (identity relations) — cannot be reassigned #
+  INT max count = 100;
+  REAL avogadro = 6.02214076e23;
+  BOOL debug mode = FALSE;
+  STRING version = "3.1.2";
+
+  # Variables — can be reassigned #
+  INT counter := 0;
+  counter := counter + 1;
+  counter := counter + 1;
+
+  print(("max count = ", max count, new line));
+  print(("avogadro = ", avogadro, new line));
+  print(("version = ", version, new line));
+  print(("counter after increments = ", counter, new line));
+
+  # ALGOL 68 enforces the distinction:
+  # max count := 200  would be a compile error — max count is not a variable #
+  print(("Constants cannot be reassigned — enforced at compile time", new line))
+END

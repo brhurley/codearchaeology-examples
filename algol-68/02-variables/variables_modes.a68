@@ -1,0 +1,24 @@
+BEGIN
+  # Define mode synonyms #
+  MODE TEMPERATURE = REAL;
+  MODE COUNT = INT;
+  MODE NAME = STRING;
+  MODE FLAG = BOOL;
+
+  # Use the new mode names #
+  TEMPERATURE boiling point = 100.0;
+  TEMPERATURE freezing point = 0.0;
+  COUNT population := 8000000000;
+  NAME language = "ALGOL 68";
+  FLAG is active = TRUE;
+
+  print(("Boiling point: ", boiling point, " C", new line));
+  print(("Freezing point: ", freezing point, " C", new line));
+  print(("World population: ", population, new line));
+  print(("Language: ", language, new line));
+  print(("Active: ", is active, new line));
+
+  # Because MODE creates structural aliases, TEMPERATURE and REAL are compatible #
+  REAL raw temp := boiling point;
+  print(("Raw temp (as REAL): ", raw temp, new line))
+END

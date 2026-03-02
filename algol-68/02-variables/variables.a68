@@ -1,0 +1,26 @@
+BEGIN
+  # Integer variables #
+  INT count := 42;
+  INT year := 1968;
+
+  # Real (floating-point) variables #
+  REAL pi := 3.14159265;
+  REAL temperature := -17.5;
+
+  # Boolean variables #
+  BOOL is historic := TRUE;
+  BOOL is mainstream := FALSE;
+
+  # Character and string variables #
+  CHAR initial := "A";
+  STRING language name := "ALGOL 68";
+
+  # Print the values #
+  print(("count = ", count, new line));
+  print(("year = ", year, new line));
+  print(("pi = ", pi, new line));
+  print(("temperature = ", temperature, new line));
+  print(("is historic = ", is historic, new line));
+  print(("initial = ", initial, new line));
+  print(("language name = ", language name, new line))
+END

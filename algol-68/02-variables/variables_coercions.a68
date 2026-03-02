@@ -1,0 +1,33 @@
+BEGIN
+  # Widening: INT is automatically coerced to REAL where needed #
+  INT whole := 7;
+  REAL fraction := whole;   # INT widened to REAL automatically #
+
+  print(("INT value: ", whole, new line));
+  print(("Widened to REAL: ", fraction, new line));
+
+  # Explicit conversion using standard procedures #
+  REAL pi approx := 3.14159;
+  INT truncated = ENTIER pi approx;   # ENTIER truncates toward negative infinity #
+  INT rounded = ROUND pi approx;      # ROUND rounds to nearest integer #
+
+  print(("pi approx: ", pi approx, new line));
+  print(("ENTIER (truncate): ", truncated, new line));
+  print(("ROUND (nearest): ", rounded, new line));
+
+  # String and character operations #
+  STRING greeting := "Hello";
+  INT length = UPB greeting;   # UPB gives the upper bound (length) of a string #
+
+  print(("Greeting: ", greeting, new line));
+  print(("Length: ", length, new line));
+
+  # Character arithmetic #
+  CHAR letter a = "a";
+  INT char code = ABS letter a;   # ABS converts a CHAR to its integer code #
+  CHAR next letter = REPR (char code + 1);   # REPR converts back to CHAR #
+
+  print(("Letter: ", letter a, new line));
+  print(("Char code: ", char code, new line));
+  print(("Next letter: ", next letter, new line))
+END
