@@ -1,0 +1,35 @@
+MODULE bitfields =
+BEGIN
+
+EXTERNAL ROUTINE
+    print_int;
+
+GLOBAL ROUTINE show_bitfields : NOVALUE =
+BEGIN
+    LOCAL
+        word,
+        low_byte,
+        high_byte,
+        nibble;
+
+    ! Store a 32-bit pattern: 0xABCD = 43981 decimal
+    word = %X'ABCD';
+
+    ! Extract the low 8 bits (byte): position 0, size 8
+    low_byte = .word<0,8>;
+
+    ! Extract bits 8-15 (next byte): position 8, size 8
+    high_byte = .word<8,8>;
+
+    ! Extract a 4-bit nibble: position 4, size 4
+    nibble = .word<4,4>;
+
+    print_int(.word);
+    print_int(.low_byte);
+    print_int(.high_byte);
+    print_int(.nibble)
+
+END;
+
+END
+ELUDOM

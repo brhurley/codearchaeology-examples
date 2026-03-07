@@ -1,0 +1,39 @@
+MODULE constants =
+BEGIN
+
+EXTERNAL ROUTINE
+    print_int;
+
+! LITERAL declares a compile-time constant (no storage allocated)
+LITERAL
+    max_count = 100,
+    buffer_size = 512,
+    flag_on = 1,
+    flag_off = 0;
+
+! OWN with INITIAL: module-level variable with a non-zero starting value
+OWN
+    limit INITIAL(max_count),
+    size  INITIAL(buffer_size);
+
+GLOBAL ROUTINE show_constants : NOVALUE =
+BEGIN
+    LOCAL
+        x,
+        is_enabled;
+
+    ! LITERAL values are substituted at compile time
+    x = max_count * 2;
+    is_enabled = flag_on;
+
+    print_int(max_count);
+    print_int(buffer_size);
+    print_int(.limit);
+    print_int(.size);
+    print_int(.x);
+    print_int(.is_enabled)
+
+END;
+
+END
+ELUDOM

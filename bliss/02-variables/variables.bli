@@ -1,0 +1,41 @@
+MODULE variables =
+BEGIN
+
+EXTERNAL ROUTINE
+    print_int;
+
+! OWN variables: module-level, initialized to 0 by default
+OWN
+    counter,
+    total;
+
+GLOBAL ROUTINE show_variables : NOVALUE =
+BEGIN
+    ! LOCAL variables: stack-allocated, exist only in this routine
+    LOCAL
+        a,
+        b,
+        result;
+
+    ! Assignment: store a value at the address of the variable
+    a = 10;
+    b = 25;
+
+    ! Reading values: .a means "contents of a"
+    result = .a + .b;
+
+    ! Use OWN variables
+    counter = 1;
+    total = .a * .b;
+
+    ! Print each value via C bridge
+    print_int(.a);
+    print_int(.b);
+    print_int(.result);
+    print_int(.counter);
+    print_int(.total)
+
+END;
+
+END
+ELUDOM
