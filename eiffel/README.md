@@ -4,6 +4,7 @@ Code examples for Eiffel programming language from [CodeArchaeology.dev](https:/
 
 ## Examples
 
+- [Variables and Types in Eiffel](02-variables/) - Learn about variables, data types, type conversions, and Design by Contract type safety in Eiffel with practical Docker-ready examples
 - [Hello World in Eiffel](01-hello-world/) - Your first Eiffel program - the classic Hello World example with Docker setup using EiffelStudio
 
 *Auto-generated from site content*
