@@ -1,0 +1,33 @@
+procedure main()
+    # Variables are created by assignment
+    x := 42
+    name := "Icon"
+    pi := 3.14159
+    vowels := 'aeiou'
+
+    # The type() function returns a string naming the type
+    write("x = ", x, " (", type(x), ")")
+    write("name = ", name, " (", type(name), ")")
+    write("pi = ", pi, " (", type(pi), ")")
+    write("vowels = ", vowels, " (", type(vowels), ")")
+
+    # Unassigned variables have the value &null
+    write("y = (", type(y), ")")
+
+    # The null test operators: / succeeds if null, \ succeeds if non-null
+    if /y then write("y is null")
+    if \x then write("x is not null")
+
+    # Variables can change type freely
+    x := "now I'm a string"
+    write("x is now: ", x, " (", type(x), ")")
+
+    # Arbitrary precision integers
+    big := 2 ^ 64
+    write("2^64 = ", big, " (", type(big), ")")
+
+    # Negative numbers and zero
+    neg := -17
+    zero := 0
+    write("neg = ", neg, ", zero = ", zero)
+end

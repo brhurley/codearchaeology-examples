@@ -4,6 +4,7 @@ Code examples for Icon programming language from [CodeArchaeology.dev](https://c
 
 ## Examples
 
+- [Variables and Types in Icon](02-variables/) - Learn about variables, data types, automatic type conversion, and null handling in Icon with practical Docker-ready examples
 - [Hello World in Icon](01-hello-world/) - Your first Icon program - the classic Hello World example with Docker setup
 
 *Auto-generated from site content*

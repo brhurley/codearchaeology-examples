@@ -1,0 +1,51 @@
+procedure main()
+    write("--- Automatic Conversion ---")
+
+    # String to number in arithmetic
+    result := "25" + 17
+    write("\"25\" + 17 = ", result, " (", type(result), ")")
+
+    # Number to string in concatenation
+    greeting := "Version " || 9
+    write(greeting, " (", type(greeting), ")")
+
+    # Integer to real in mixed arithmetic
+    mixed := 7 / 2.0
+    write("7 / 2.0 = ", mixed, " (", type(mixed), ")")
+
+    # Integer division (both operands are integers)
+    intdiv := 7 / 2
+    write("7 / 2 = ", intdiv, " (", type(intdiv), ")")
+
+    write()
+    write("--- Explicit Conversion ---")
+
+    # Explicit conversion functions
+    i := integer("99")
+    write("integer(\"99\") = ", i, " (", type(i), ")")
+
+    r := real(42)
+    write("real(42) = ", r, " (", type(r), ")")
+
+    s := string(3.14)
+    write("string(3.14) = ", s, " (", type(s), ")")
+
+    # numeric() converts to integer or real as appropriate
+    n1 := numeric("100")
+    n2 := numeric("3.5")
+    write("numeric(\"100\") is ", type(n1))
+    write("numeric(\"3.5\") is ", type(n2))
+
+    write()
+    write("--- Failed Conversion ---")
+
+    # Conversion failure integrates with goal-directed evaluation
+    if integer("hello") then
+        write("converted")
+    else
+        write("integer(\"hello\") failed - not a number")
+
+    # Using the default operator to handle conversion failure
+    val := integer("abc") | 0
+    write("integer(\"abc\") defaulted to: ", val)
+end

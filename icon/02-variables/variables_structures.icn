@@ -1,0 +1,44 @@
+record Point(x, y)
+
+procedure main()
+    write("--- Lists ---")
+    colors := ["red", "green", "blue"]
+    write("colors has ", *colors, " elements")
+    every write("  ", !colors)
+
+    # Lists can hold mixed types
+    mixed := [1, "two", 3.0, ["nested"]]
+    write("mixed types: ", type(mixed[1]), ", ", type(mixed[2]),
+          ", ", type(mixed[3]), ", ", type(mixed[4]))
+
+    write()
+    write("--- Sets ---")
+    fruits := set(["apple", "banana", "cherry", "apple"])
+    write("fruits has ", *fruits, " unique elements")
+    insert(fruits, "date")
+    if member(fruits, "banana") then
+        write("  banana is in the set")
+
+    write()
+    write("--- Tables ---")
+    ages := table(0)
+    ages["Alice"] := 30
+    ages["Bob"] := 25
+    ages["Carol"] := 35
+    write("Alice is ", ages["Alice"])
+    write("Unknown defaults to ", ages["nobody"])
+
+    write()
+    write("--- Records ---")
+    p := Point(10, 20)
+    write("Point: (", p.x, ", ", p.y, ")")
+    p.x := 50
+    write("Modified: (", p.x, ", ", p.y, ")")
+
+    write()
+    write("--- Size Operator * ---")
+    write("string length: ", *"hello")
+    write("list size: ", *colors)
+    write("set size: ", *fruits)
+    write("table size: ", *ages)
+end
