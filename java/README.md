@@ -4,6 +4,7 @@ Code examples for Java programming language from [CodeArchaeology.dev](https://c
 
 ## Examples
 
+- [Variables and Types in Java](02-variables/) - Learn about variables, data types, and type conversions in Java with practical Docker-ready examples
 - [Hello World in Java](01-hello-world/) - Your first Java program - the classic Hello World example with Docker setup
 
 *Auto-generated from site content*
