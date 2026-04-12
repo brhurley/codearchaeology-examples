@@ -4,6 +4,7 @@ Code examples for Pascal programming language from [CodeArchaeology.dev](https:/
 
 ## Examples
 
+- [Variables and Types in Pascal](02-variables/) - Learn about variables, data types, constants, and type conversions in Pascal with practical Docker-ready examples
 - [Hello World in Pascal](01-hello-world/) - Your first Pascal program - the classic Hello World example with Docker setup
 
 *Auto-generated from site content*
