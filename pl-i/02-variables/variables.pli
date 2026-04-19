@@ -1,0 +1,24 @@
+VARIABLES: PROCEDURE OPTIONS(MAIN);
+
+   /* Numeric types */
+   DECLARE AGE        FIXED BINARY(31)     INITIAL(42);
+   DECLARE COUNT      FIXED BINARY(15)     INITIAL(1000);
+   DECLARE SALARY     FIXED DECIMAL(10,2)  INITIAL(75000.50);
+   DECLARE PI         FLOAT DECIMAL(6)     INITIAL(3.14159);
+
+   /* Character types */
+   DECLARE FULL_NAME  CHARACTER(30) VARYING INITIAL('Ada Lovelace');
+   DECLARE GRADE      CHARACTER(1)          INITIAL('A');
+
+   /* Bit string (PL/I's boolean) */
+   DECLARE IS_ACTIVE  BIT(1)                INITIAL('1'B);
+
+   PUT EDIT('AGE        = ', AGE)       (A, F(6));       PUT SKIP;
+   PUT EDIT('COUNT      = ', COUNT)     (A, F(6));       PUT SKIP;
+   PUT EDIT('SALARY     = ', SALARY)    (A, F(10,2));    PUT SKIP;
+   PUT EDIT('PI         = ', PI)        (A, F(10,5));    PUT SKIP;
+   PUT EDIT('FULL_NAME  = ', FULL_NAME) (A, A);          PUT SKIP;
+   PUT EDIT('GRADE      = ', GRADE)     (A, A);          PUT SKIP;
+   PUT EDIT('IS_ACTIVE  = ', IS_ACTIVE) (A, B(1));       PUT SKIP;
+
+END VARIABLES;

@@ -1,0 +1,25 @@
+CONVERT: PROCEDURE OPTIONS(MAIN);
+
+   DECLARE I           FIXED BINARY(31)     INITIAL(100);
+   DECLARE F           FLOAT DECIMAL(6);
+   DECLARE D           FIXED DECIMAL(10,2);
+
+   DECLARE GREETING    CHARACTER(11)  INITIAL('Hello, PL/I');
+   DECLARE SUFFIX      CHARACTER(10) VARYING INITIAL('!');
+   DECLARE COMBINED    CHARACTER(30) VARYING;
+
+   /* FIXED BINARY to FLOAT DECIMAL - widening conversion */
+   F = I;
+
+   /* FLOAT DECIMAL arithmetic then assignment to FIXED DECIMAL */
+   D = F * 1.5;
+
+   /* String concatenation builds a new VARYING string */
+   COMBINED = GREETING || SUFFIX;
+
+   PUT EDIT('I  (FIXED BINARY)  = ', I) (A, F(6));          PUT SKIP;
+   PUT EDIT('F  (FLOAT DECIMAL) = ', F) (A, F(10,2));       PUT SKIP;
+   PUT EDIT('D  (FIXED DECIMAL) = ', D) (A, F(10,2));       PUT SKIP;
+   PUT EDIT('COMBINED           = ', COMBINED) (A, A);      PUT SKIP;
+
+END CONVERT;
