@@ -4,6 +4,7 @@ Code examples for R programming language from [CodeArchaeology.dev](https://code
 
 ## Examples
 
+- [Variables and Types in R](02-variables/) - Learn how R handles variables, atomic types, type coercion, and special values — with its vector-first philosophy and dynamic, strong typing
 - [Hello World in R](01-hello-world/) - Your first R program - the classic Hello World example with Docker setup for statistical computing
 
 *Auto-generated from site content*
