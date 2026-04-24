@@ -1,6 +1,6 @@
-# 02-variables
+# Variables and Types in ALGOL 68
 
-
+Learn about ALGOL 68's powerful mode system — its unique approach to variables, types, and type composition with practical Docker-ready examples
 
 ## Files
 
