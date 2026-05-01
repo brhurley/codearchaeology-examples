@@ -1,0 +1,18 @@
+*       Build patterns and store them in variables
+        VOWEL    = ANY("aeiouAEIOU")
+        DIGIT    = ANY("0123456789")
+        NUMBER   = SPAN("0123456789")
+
+*       Patterns are real values - DATATYPE proves it
+        OUTPUT = "type of VOWEL  = " DATATYPE(VOWEL)
+        OUTPUT = "type of NUMBER = " DATATYPE(NUMBER)
+
+*       Use a stored pattern in a match
+        WORD = "snobol4"
+        WORD VOWEL . V                            :F(NOMATCH)
+        OUTPUT = "first vowel in 'snobol4' is: " V
+        WORD NUMBER . NUM                         :F(DONE)
+        OUTPUT = "trailing number is: " NUM " (" DATATYPE(NUM) ")"
+NOMATCH
+DONE
+END

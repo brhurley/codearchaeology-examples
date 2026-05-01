@@ -1,0 +1,18 @@
+*       Basic variables of different types
+        COUNT = 42
+        GREETING = "Hello"
+        PI = 3.14159
+        EMPTY =
+
+*       OUTPUT prints each assigned value as a line
+        OUTPUT = "COUNT    = " COUNT
+        OUTPUT = "GREETING = " GREETING
+        OUTPUT = "PI       = " PI
+        OUTPUT = "EMPTY    = '" EMPTY "'"
+
+*       DATATYPE reveals the runtime type
+        OUTPUT = "type of COUNT    = " DATATYPE(COUNT)
+        OUTPUT = "type of GREETING = " DATATYPE(GREETING)
+        OUTPUT = "type of PI       = " DATATYPE(PI)
+        OUTPUT = "type of EMPTY    = " DATATYPE(EMPTY)
+END

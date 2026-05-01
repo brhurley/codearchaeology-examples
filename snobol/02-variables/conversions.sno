@@ -1,0 +1,22 @@
+*       String that looks numeric -> integer arithmetic
+        S = "100"
+        N = S + 25
+        OUTPUT = "'100' + 25 = " N
+        OUTPUT = "type of N  = " DATATYPE(N)
+
+*       Mixing INTEGER and REAL promotes to REAL
+        MIX = 7 + 0.5
+        OUTPUT = "7 + 0.5    = " MIX
+        OUTPUT = "type of MIX = " DATATYPE(MIX)
+
+*       Numbers concatenate cleanly into strings
+        LABEL = "answer=" 42
+        OUTPUT = "concat result = " LABEL
+        OUTPUT = "type of LABEL = " DATATYPE(LABEL)
+
+*       Explicit conversion with CONVERT()
+        TEXT = CONVERT(3.14, "STRING")
+        BACK = CONVERT("256", "INTEGER")
+        OUTPUT = "CONVERT(3.14,'STRING') = " TEXT " (" DATATYPE(TEXT) ")"
+        OUTPUT = "CONVERT('256','INTEGER') = " BACK " (" DATATYPE(BACK) ")"
+END
