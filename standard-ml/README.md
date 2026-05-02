@@ -4,6 +4,7 @@ Code examples for Standard-ml programming language from [CodeArchaeology.dev](ht
 
 ## Examples
 
+- [Variables and Types in Standard ML](02-variables/) - Learn how Standard ML handles value bindings, type inference, composite types, and mutable references in a statically-typed functional language
 - [Hello World in Standard ML](01-hello-world/) - Your first Standard ML program - the classic Hello World example with Docker setup using SML/NJ
 
 *Auto-generated from site content*
