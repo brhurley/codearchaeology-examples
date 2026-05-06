@@ -65,18 +65,18 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Raku](raku/) - 2 example(s)
 - [Rexx](rexx/) - 2 example(s)
 - [Roc](roc/) - 2 example(s)
-- [Rpg](rpg/) - 1 example(s)
-- [Ruby](ruby/) - 1 example(s)
-- [Rust](rust/) - 1 example(s)
-- [Scala](scala/) - 1 example(s)
-- [Scheme](scheme/) - 1 example(s)
+- [Rpg](rpg/) - 2 example(s)
+- [Ruby](ruby/) - 2 example(s)
+- [Rust](rust/) - 2 example(s)
+- [Scala](scala/) - 2 example(s)
+- [Scheme](scheme/) - 2 example(s)
 - [Shakespeare](shakespeare/) - 1 example(s)
-- [Smalltalk](smalltalk/) - 1 example(s)
-- [Snobol](snobol/) - 1 example(s)
-- [Standard-ml](standard-ml/) - 1 example(s)
-- [Swift](swift/) - 1 example(s)
-- [Tcl](tcl/) - 1 example(s)
-- [Typescript](typescript/) - 1 example(s)
+- [Smalltalk](smalltalk/) - 2 example(s)
+- [Snobol](snobol/) - 2 example(s)
+- [Standard-ml](standard-ml/) - 2 example(s)
+- [Swift](swift/) - 2 example(s)
+- [Tcl](tcl/) - 2 example(s)
+- [Typescript](typescript/) - 2 example(s)
 - [V](v/) - 1 example(s)
 - [Vale](vale/) - 1 example(s)
 - [Whitespace](whitespace/) - 1 example(s)
@@ -97,4 +97,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2026-04-24 09:04:11*
+*Last generated: 2026-05-06 03:01:43*
