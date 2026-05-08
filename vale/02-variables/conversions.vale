@@ -1,0 +1,19 @@
+import stdlib.*;
+
+exported func main() {
+  // int -> float
+  whole = 7;
+  fractional = whole.toFloat();
+
+  // float -> int (truncates toward zero)
+  measured = 3.9;
+  truncated = measured.toInt();
+
+  // values -> str via the str() function
+  label = "value=" + str(whole);
+
+  println("whole       = " + str(whole));
+  println("fractional  = " + str(fractional));
+  println("truncated   = " + str(truncated));
+  println(label);
+}

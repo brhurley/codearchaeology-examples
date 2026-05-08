@@ -1,0 +1,15 @@
+import stdlib.*;
+
+exported func main() {
+  // Final binding — cannot be reassigned
+  hours = 24;
+
+  // Mutable binding — note the ! after the name
+  counter! = 0;
+  set counter = counter + 1;
+  set counter = counter + 1;
+  set counter = counter + 1;
+
+  println("hours   = " + str(hours));
+  println("counter = " + str(counter));
+}

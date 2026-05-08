@@ -1,0 +1,14 @@
+import stdlib.*;
+
+exported func main() {
+  // Type-inferred final bindings — the compiler picks the type from the literal
+  count = 42;
+  pi = 3.14159;
+  greeting = "Hello, Vale!";
+  is_ready = true;
+
+  println(count);
+  println(pi);
+  println(greeting);
+  println(is_ready);
+}

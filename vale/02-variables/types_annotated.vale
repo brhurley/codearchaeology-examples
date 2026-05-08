@@ -1,0 +1,16 @@
+import stdlib.*;
+
+exported func main() {
+  // Explicit type annotations
+  age int = 30;
+  big i64 = 9000000000;
+  ratio float = 0.5;
+  active bool = false;
+  name str = "Vale";
+
+  println("age   = " + str(age));
+  println("big   = " + str(big));
+  println("ratio = " + str(ratio));
+  println("name  = " + name);
+  println("active= " + str(active));
+}
