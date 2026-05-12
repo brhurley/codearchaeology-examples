@@ -4,9 +4,9 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 
 ## Languages
 
-- [Abap](abap/) - 2 example(s)
-- [Ada](ada/) - 2 example(s)
-- [Algol-60](algol-60/) - 2 example(s)
+- [Abap](abap/) - 3 example(s)
+- [Ada](ada/) - 3 example(s)
+- [Algol-60](algol-60/) - 3 example(s)
 - [Algol-68](algol-68/) - 2 example(s)
 - [Apl](apl/) - 2 example(s)
 - [Assembly](assembly/) - 2 example(s)
@@ -77,10 +77,10 @@ Runnable code examples from [CodeArchaeology.dev](https://codearchaeology.dev) -
 - [Swift](swift/) - 2 example(s)
 - [Tcl](tcl/) - 2 example(s)
 - [Typescript](typescript/) - 2 example(s)
-- [V](v/) - 1 example(s)
-- [Vale](vale/) - 1 example(s)
+- [V](v/) - 2 example(s)
+- [Vale](vale/) - 2 example(s)
 - [Whitespace](whitespace/) - 1 example(s)
-- [Zig](zig/) - 1 example(s)
+- [Zig](zig/) - 2 example(s)
 
 ## About
 
@@ -97,4 +97,4 @@ Visit [CodeArchaeology.dev](https://codearchaeology.dev) for:
 This repository is automatically generated from the site's markdown content.
 Do not edit files directly - changes will be overwritten.
 
-*Last generated: 2026-05-06 03:01:43*
+*Last generated: 2026-05-12 03:01:42*
