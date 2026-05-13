@@ -1,0 +1,18 @@
+BEGIN
+  INT a = 17, b = 5;
+
+  print(("a = ", a, ", b = ", b, new line));
+  print(("a + b   = ", a + b, new line));
+  print(("a - b   = ", a - b, new line));
+  print(("a * b   = ", a * b, new line));
+  print(("a / b   = ", a / b, new line));
+  print(("a OVER b = ", a OVER b, new line));
+  print(("a MOD b  = ", a MOD b, new line));
+  print(("a ** 2   = ", a ** 2, new line));
+
+  print((new line, "Comparisons:", new line));
+  print(("a = b   is ", a = b, new line));
+  print(("a /= b  is ", a /= b, new line));
+  print(("a > b   is ", a > b, new line));
+  print(("a <= b  is ", a <= b, new line))
+END

@@ -1,0 +1,9 @@
+BEGIN
+  PRIO MAX = 8;
+  OP MAX = (INT a, b) INT:
+    IF a > b THEN a ELSE b FI;
+
+  print(("3 MAX 7    = ", 3 MAX 7, new line));
+  print(("10 MAX 4   = ", 10 MAX 4, new line));
+  print(("2 + 3 MAX 5 = ", 2 + 3 MAX 5, new line))
+END

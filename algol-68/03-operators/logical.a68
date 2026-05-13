@@ -1,0 +1,17 @@
+BEGIN
+  BOOL sunny = TRUE, warm = FALSE;
+  INT temp = 72;
+
+  print(("sunny AND warm = ", sunny AND warm, new line));
+  print(("sunny OR warm  = ", sunny OR warm, new line));
+  print(("NOT warm       = ", NOT warm, new line));
+
+  IF temp > 60 AND temp < 80
+  THEN print(("Temperature is comfortable.", new line))
+  ELSE print(("Temperature is extreme.", new line))
+  FI;
+
+  IF NOT (temp = 0)
+  THEN print(("Temperature is non-zero.", new line))
+  FI
+END

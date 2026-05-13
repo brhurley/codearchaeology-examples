@@ -1,0 +1,20 @@
+BEGIN
+  INT count := 10;
+  REAL balance := 100.0;
+
+  count +:= 5;
+  print(("count after +:= 5  -> ", count, new line));
+
+  count -:= 3;
+  print(("count after -:= 3  -> ", count, new line));
+
+  count *:= 2;
+  print(("count after *:= 2  -> ", count, new line));
+
+  balance /:= 4.0;
+  print(("balance after /:= 4.0 -> ", balance, new line));
+
+  INT x, y, z;
+  x := y := z := 0;
+  print(("chained: x=", x, " y=", y, " z=", z, new line))
+END
