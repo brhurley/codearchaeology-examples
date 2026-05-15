@@ -1,0 +1,47 @@
+MODULE operators =
+BEGIN
+
+EXTERNAL ROUTINE
+    print_arith,
+    print_comp,
+    print_logic,
+    print_shift,
+    print_prec,
+    print_assign,
+    print_dot;
+
+GLOBAL ROUTINE run_operators : NOVALUE =
+BEGIN
+    LOCAL a, b, x, y;
+
+    a = 10;
+    b = 3;
+
+    ! Arithmetic: + - * / MOD all work on full machine words
+    print_arith(.a + .b, .a - .b, .a * .b, .a / .b, .a MOD .b);
+
+    ! Comparison: keyword operators yielding 1 (true) or 0 (false)
+    print_comp(.a EQL .b, .a NEQ .b, .a GTR .b, .a LSS .b);
+
+    ! Bitwise logical: AND OR XOR operate on every bit of the word
+    print_logic(12 AND 10, 12 OR 10, 12 XOR 10);
+
+    ! Shift: ^ takes a positive count for left shift, negative for right shift
+    print_shift(1 ^ 4, 64 ^ -2);
+
+    ! Precedence: * binds tighter than +, parentheses force grouping
+    print_prec(2 + 3 * 4, (2 + 3) * 4);
+
+    ! Assignment is itself an expression returning the assigned value
+    y = 100;
+    x = (y = .y + 5);
+    print_assign(.x, .y);
+
+    ! The dot operator: bare name = address, .name = contents
+    a = 42;
+    b = .a + 1;
+    print_dot(.a, .b)
+END;
+
+END
+ELUDOM
