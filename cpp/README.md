@@ -5,6 +5,7 @@ Code examples for Cpp programming language from [CodeArchaeology.dev](https://co
 ## Examples
 
 - [Variables and Types in C++](02-variables/) - Learn about variables, data types, type conversions, and constants in C++ with practical Docker-ready examples
+- [Operators in C++](03-operators/) - Master arithmetic, comparison, logical, bitwise, and assignment operators in C++ with runnable Docker examples covering precedence and operator overloading.
 - [Hello World in C++](01-hello-world/) - Your first C++ program - the classic Hello World example with Docker setup
 
 *Auto-generated from site content*
