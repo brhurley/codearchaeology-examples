@@ -1,0 +1,33 @@
+procedure main()
+    # The "to" operator generates a sequence
+    every i := 1 to 5 do
+        writes(i, " ")
+    write()
+
+    # "to ... by" controls the step
+    every i := 10 to 1 by -2 do
+        writes(i, " ")
+    write()
+
+    # The element generator ! produces successive elements of a list/string
+    L := [10, 20, 30, 40]
+    every writes(!L, " ")
+    write()
+
+    # ! on a string generates each character
+    every writes(!"abc", " ")
+    write()
+
+    # Goal-directed evaluation: find every i*j that equals 12
+    every i := 1 to 6 & j := 1 to 6 do
+        if i * j = 12 then
+            write("  ", i, " * ", j, " = 12")
+
+    # Operator precedence demo (highest to lowest in this expression):
+    #   ^   (right-associative)  has higher precedence than * /
+    #   * / % are higher than + -
+    #   parentheses force evaluation order
+    write("2 + 3 * 4   = ", 2 + 3 * 4)       # 14
+    write("(2 + 3) * 4 = ", (2 + 3) * 4)     # 20
+    write("2 ^ 3 ^ 2   = ", 2 ^ 3 ^ 2)       # 512  (right-assoc: 2 ^ (3 ^ 2))
+end

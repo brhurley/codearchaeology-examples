@@ -1,0 +1,27 @@
+procedure main()
+    greeting := "Hello"
+    target   := "Icon"
+
+    # Concatenation with ||
+    msg := greeting || ", " || target || "!"
+    write(msg)
+
+    # Repetition: produces n copies of a string
+    bar := "-" || repl("=", 10) || "-"
+    write(bar)
+
+    # Size of a string with *
+    write("length of msg = ", *msg)
+
+    # Subscripting: s[i] picks one character, s[i:j] picks a substring
+    write("first char     = ", msg[1])
+    write("last char      = ", msg[-1])
+    write("chars 1..5     = ", msg[1:6])    # 1:6 means positions 1 up to 6
+    write("chars 8..end   = ", msg[8:0])    # 0 means "end of string"
+
+    # Lexical comparison: ==, ~==, <<, <<=, >>, >>=
+    if "apple" << "banana" then
+        write("'apple' << 'banana' succeeds")
+    if "icon" == ("ic" || "on") then
+        write("string equality holds")
+end

@@ -1,0 +1,33 @@
+procedure main()
+    x := 25
+
+    # Numeric comparison operators: =, ~=, <, <=, >, >=
+    if x = 25 then write("x equals 25")
+    if x ~= 0 then write("x is not zero")
+
+    # Chained comparison: 0 < x < 100 succeeds when both hold.
+    # (0 < x) returns x; then (x < 100) tests that against 100.
+    if 0 < x < 100 then
+        write("x is between 0 and 100 (chained comparison)")
+
+    # Alternation |: try the left side, then the right
+    color := "red" | "green" | "blue"
+    write("first value of alternation: ", color)
+
+    # every iterates over all values an expression can produce
+    every c := ("red" | "green" | "blue") do
+        write("  alternation value: ", c)
+
+    # Conjunction & : evaluate left, then right; result is the rightmost
+    if (x > 0) & (x < 100) then
+        write("both conditions true (conjunction)")
+
+    # Negation: 'not' inverts success/failure
+    if not (x = 0) then
+        write("x is not zero (via not)")
+
+    # Default operator \ and null-check /
+    y := &null
+    z := \y | "fallback"     # if y is non-null, use it; else use fallback
+    write("z = ", z)
+end
