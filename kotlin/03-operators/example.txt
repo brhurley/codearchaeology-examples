@@ -1,0 +1,2 @@
+val result = 2 + 3 * 4        // 14, not 20
+val clearer = 2 + (3 * 4)     // Same result, clearer intent
