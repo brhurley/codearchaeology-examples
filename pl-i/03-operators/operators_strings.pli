@@ -1,0 +1,15 @@
+STRINGS: PROCEDURE OPTIONS(MAIN);
+   DCL FIRST_NAME CHAR(20) VARYING;
+   DCL LAST_NAME  CHAR(20) VARYING;
+   DCL FULL_NAME  CHAR(40) VARYING;
+
+   FIRST_NAME = 'Grace';
+   LAST_NAME  = 'Hopper';
+   FULL_NAME  = FIRST_NAME || ' ' || LAST_NAME;
+
+   PUT EDIT('Full name: ', FULL_NAME)(A, A);
+   PUT SKIP EDIT('Greeting:  ', 'Hello, ' || FIRST_NAME || '!')(A, A);
+
+   PUT SKIP EDIT('2 + 3 * 4   = ', 2 + 3 * 4)   (A, F(2));
+   PUT SKIP EDIT('(2 + 3) * 4 = ', (2 + 3) * 4) (A, F(2));
+END STRINGS;

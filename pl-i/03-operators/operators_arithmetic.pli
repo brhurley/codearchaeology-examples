@@ -1,0 +1,15 @@
+ARITHMETIC: PROCEDURE OPTIONS(MAIN);
+   DCL (A, B) FIXED BINARY(31);
+
+   A = 17;
+   B = 5;
+
+   PUT EDIT('A = ', A)                (A, F(2));
+   PUT SKIP EDIT('B = ', B)           (A, F(1));
+   PUT SKIP EDIT('A + B  = ', A + B)  (A, F(2));
+   PUT SKIP EDIT('A - B  = ', A - B)  (A, F(2));
+   PUT SKIP EDIT('A * B  = ', A * B)  (A, F(2));
+   PUT SKIP EDIT('A ** 2 = ', A ** 2) (A, F(3));
+   PUT SKIP EDIT('17 / 5  (DIVIDE) = ', DIVIDE(A, B, 10, 0)) (A, F(1));
+   PUT SKIP EDIT('17 mod 5 (MOD)   = ', MOD(A, B)) (A, F(1));
+END ARITHMETIC;

@@ -1,0 +1,38 @@
+COMPARISON: PROCEDURE OPTIONS(MAIN);
+   DCL (X, Y) FIXED BINARY(31);
+
+   X = 10;
+   Y = 20;
+
+   PUT EDIT('X = 10, Y = 20')(A);
+
+   IF X = Y THEN
+      PUT SKIP EDIT('X = Y  : TRUE')(A);
+   ELSE
+      PUT SKIP EDIT('X = Y  : FALSE')(A);
+
+   IF X ^= Y THEN
+      PUT SKIP EDIT('X ^= Y : TRUE')(A);
+   ELSE
+      PUT SKIP EDIT('X ^= Y : FALSE')(A);
+
+   IF X < Y THEN
+      PUT SKIP EDIT('X < Y  : TRUE')(A);
+   ELSE
+      PUT SKIP EDIT('X < Y  : FALSE')(A);
+
+   IF X > Y THEN
+      PUT SKIP EDIT('X > Y  : TRUE')(A);
+   ELSE
+      PUT SKIP EDIT('X > Y  : FALSE')(A);
+
+   IF X <= Y THEN
+      PUT SKIP EDIT('X <= Y : TRUE')(A);
+   ELSE
+      PUT SKIP EDIT('X <= Y : FALSE')(A);
+
+   IF X >= Y THEN
+      PUT SKIP EDIT('X >= Y : TRUE')(A);
+   ELSE
+      PUT SKIP EDIT('X >= Y : FALSE')(A);
+END COMPARISON;
