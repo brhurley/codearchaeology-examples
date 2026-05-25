@@ -1,0 +1,2 @@
+CRTBNDRPG PGM(MYLIB/ARITH) SRCSTMF('/home/user/arithmetic.rpgle')
+CALL PGM(MYLIB/ARITH)
