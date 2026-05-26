@@ -1,6 +1,6 @@
-# 02-variables
+# Variables and Types in Scheme
 
-
+Learn about variable bindings, data types, and Scheme's unique numeric tower with practical Docker-ready examples
 
 ## Files
 
