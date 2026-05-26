@@ -1,0 +1,11 @@
+*       Concatenation joins values with a blank between them
+        FIRST = "Code"
+        SECOND = "Archaeology"
+        OUTPUT = FIRST SECOND
+        OUTPUT = FIRST " " SECOND
+*       Numbers are concatenated as text, not added
+        OUTPUT = 12 34
+*       Mix a variable into a string
+        VERSION = 4
+        OUTPUT = "SNOBOL" VERSION
+END

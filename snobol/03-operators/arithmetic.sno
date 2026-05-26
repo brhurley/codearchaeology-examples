@@ -1,0 +1,13 @@
+*       Arithmetic operators in SNOBOL
+*       Binary operators MUST have a blank on each side
+        A = 17
+        B = 5
+        OUTPUT = "Addition: " (A + B)
+        OUTPUT = "Subtraction: " (A - B)
+        OUTPUT = "Multiplication: " (A * B)
+        OUTPUT = "Division: " (A / B)
+        OUTPUT = "Exponentiation: " (A ** B)
+        OUTPUT = "Negation: " (- A)
+        OUTPUT = "Precedence (2 + 3 * 4): " (2 + 3 * 4)
+        OUTPUT = "Grouped ((2 + 3) * 4): " ((2 + 3) * 4)
+END

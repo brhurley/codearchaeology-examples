@@ -1,0 +1,13 @@
+*       Comparison operators are predicate functions.
+*       Each one SUCCEEDS or FAILS instead of returning true/false.
+        X = 10
+        Y = 20
+*       Numeric comparisons: EQ NE LT LE GT GE
+        OUTPUT = GT(Y, X) "GT: Y is greater than X"      :F(L2)
+L2      OUTPUT = LE(X, Y) "LE: X is <= Y"                :F(L3)
+L3      OUTPUT = EQ(X, 10) "EQ: X equals 10"             :F(L4)
+L4      OUTPUT = NE(X, Y) "NE: X is not equal to Y"      :F(STR)
+*       String comparisons: IDENT (same) and DIFFER
+STR     OUTPUT = DIFFER("cat", "dog") "DIFFER: cat <> dog"  :F(L6)
+L6      OUTPUT = IDENT("cat", "cat") "IDENT: cat = cat"     :F(END)
+END

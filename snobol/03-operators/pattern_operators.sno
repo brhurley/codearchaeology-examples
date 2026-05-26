@@ -1,0 +1,15 @@
+*       Pattern operators build and apply patterns
+*       Alternation (|): match "cat", "dog", or "bird"
+        ANIMAL = "cat" | "dog" | "bird"
+        "I have a dog" ANIMAL . FOUND               :S(SHOW1)F(NAMES)
+SHOW1   OUTPUT = "Found animal: " FOUND
+*       Concatenation of patterns + value assignment (.)
+NAMES   FULLNAME = "John Smith"
+        FULLNAME BREAK(" ") . GIVEN " " REM . FAMILY
+        OUTPUT = "First name: " GIVEN
+        OUTPUT = "Last name: " FAMILY
+*       Match-and-replace loop: swap every "-" for "/"
+        DATE = "2026-05-26"
+SWAP    DATE "-" = "/"                              :S(SWAP)
+        OUTPUT = "Reformatted: " DATE
+END
