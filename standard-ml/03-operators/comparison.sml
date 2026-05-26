@@ -1,0 +1,12 @@
+(* Comparison operators return bool *)
+val () = print ("5 = 5  : " ^ Bool.toString (5 = 5)  ^ "\n")
+val () = print ("5 <> 3 : " ^ Bool.toString (5 <> 3) ^ "\n")
+val () = print ("5 < 3  : " ^ Bool.toString (5 < 3)  ^ "\n")
+val () = print ("5 > 3  : " ^ Bool.toString (5 > 3)  ^ "\n")
+val () = print ("5 <= 5 : " ^ Bool.toString (5 <= 5) ^ "\n")
+val () = print ("5 >= 8 : " ^ Bool.toString (5 >= 8) ^ "\n")
+
+(* Logical operators: andalso and orelse short-circuit; not is a function *)
+val () = print ("true andalso false : " ^ Bool.toString (true andalso false) ^ "\n")
+val () = print ("true orelse false  : " ^ Bool.toString (true orelse false)  ^ "\n")
+val () = print ("not true           : " ^ Bool.toString (not true)           ^ "\n")
