@@ -1,0 +1,8 @@
+"Comparison operators return Boolean objects (true or false)"
+(5 = 5) printNl.        "equality"
+(5 ~= 4) printNl.       "inequality (read as 'not equal')"
+(3 < 5) printNl.        "less than"
+(3 > 5) printNl.        "greater than"
+(5 <= 5) printNl.       "less than or equal"
+(5 >= 6) printNl.       "greater than or equal"
+('abc' = 'abc') printNl. "= compares value: same characters, so true"
