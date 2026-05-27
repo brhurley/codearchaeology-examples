@@ -1,0 +1,19 @@
+import stdlib.*;
+
+exported func main() {
+  t = true;
+  f = false;
+
+  // Keyword operators
+  println("t and f         : " + str(t and f)); // both must be true
+  println("t or  f         : " + str(t or f));  // either may be true
+  println("not t           : " + str(not t));   // negation
+
+  // Logical operators combine comparison results directly
+  n = 4;
+  println("n > 2 and n < 5 : " + str(n > 2 and n < 5));
+
+  // Function forms behave identically to the keyword operators
+  println("and(t, f)       : " + str(and(t, f)));
+  println("or(t, f)        : " + str(or(t, f)));
+}

@@ -1,0 +1,19 @@
+import stdlib.*;
+
+exported func main() {
+  a = 17;
+  b = 5;
+
+  // Arithmetic on integers
+  println("a + b   = " + str(a + b));   // addition
+  println("a - b   = " + str(a - b));   // subtraction
+  println("a * b   = " + str(a * b));   // multiplication
+  println("a / b   = " + str(a / b));   // integer division (truncates)
+  println("a mod b = " + str(a mod b)); // remainder
+
+  // Integer division throws away the fractional part. To keep it,
+  // operate on floats instead — there are no implicit conversions.
+  x = 7.0;
+  y = 2.0;
+  println("x / y   = " + str(x / y));   // float division
+}

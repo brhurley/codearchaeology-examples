@@ -1,0 +1,14 @@
+import stdlib.*;
+import stdlib.math.*;
+
+exported func main() {
+  n = 5;
+  m = -3;
+
+  println("abs(m)    = " + str(abs(m)));    // absolute value
+  println("signum(n) = " + str(signum(n))); // sign of a positive number
+  println("signum(m) = " + str(signum(m))); // sign of a negative number
+  println("signum(0) = " + str(signum(0))); // sign of zero
+  println("min(n, m) = " + str(min(n, m))); // smaller of the two
+  println("max(n, m) = " + str(max(n, m))); // larger of the two
+}

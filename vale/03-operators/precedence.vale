@@ -1,0 +1,20 @@
+import stdlib.*;
+
+exported func main() {
+  a = 2;
+  b = 3;
+  c = 4;
+
+  // '*' binds tighter than '+', so b * c happens first
+  println("a + b * c       = " + str(a + b * c));
+  println("(a + b) * c     = " + str((a + b) * c));
+
+  // Comparison binds tighter than 'and', so no parentheses are needed
+  println("a < b and b < c = " + str(a < b and b < c));
+
+  // Accumulate into a mutable binding using 'set'
+  total! = 0;
+  set total = total + a;       // total becomes 2
+  set total = total + b * c;   // adds 12, total becomes 14
+  println("total           = " + str(total));
+}

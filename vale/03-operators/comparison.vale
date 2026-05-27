@@ -1,0 +1,13 @@
+import stdlib.*;
+
+exported func main() {
+  a = 17;
+  b = 5;
+
+  println("a == b : " + str(a == b)); // equal to
+  println("a != b : " + str(a != b)); // not equal to
+  println("a <  b : " + str(a < b));  // less than
+  println("a >  b : " + str(a > b));  // greater than
+  println("a <= b : " + str(a <= b)); // less than or equal
+  println("a >= b : " + str(a >= b)); // greater than or equal
+}
