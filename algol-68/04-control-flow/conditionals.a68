@@ -1,0 +1,23 @@
+BEGIN
+  INT score = 75;
+
+  IF score >= 90 THEN
+    print(("Grade: A", new line))
+  ELIF score >= 80 THEN
+    print(("Grade: B", new line))
+  ELIF score >= 70 THEN
+    print(("Grade: C", new line))
+  ELIF score >= 60 THEN
+    print(("Grade: D", new line))
+  ELSE
+    print(("Grade: F", new line))
+  FI;
+
+  # IF is an expression — it yields a value #
+  STRING status = IF score >= 60 THEN "pass" ELSE "fail" FI;
+  print(("Status: ", status, new line));
+
+  # The brief form is equivalent #
+  INT n = 42;
+  print(("n is ", (n MOD 2 = 0 | "even" | "odd"), new line))
+END

@@ -1,0 +1,22 @@
+BEGIN
+  # Integer CASE — the value selects the 1-based branch #
+  FOR day FROM 1 TO 7 DO
+    STRING name =
+      CASE day IN
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      OUT
+        "unknown"
+      ESAC;
+    print((name, new line))
+  OD;
+
+  # Brief form is identical in meaning #
+  INT month = 4;
+  print(("Quarter ", (month | 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4 | 0), new line))
+END

@@ -1,0 +1,25 @@
+BEGIN
+  # Search for the first multiple of 7 between 20 and 50 #
+  INT found := -1;
+
+  FOR i FROM 20 TO 50 DO
+    IF i MOD 7 = 0 THEN
+      found := i;
+      GOTO done
+    FI
+  OD;
+done:
+
+  IF found > 0 THEN
+    print(("First multiple of 7 in [20,50]: ", found, new line))
+  ELSE
+    print(("None found", new line))
+  FI;
+
+  # The idiomatic alternative: use WHILE to express the exit condition #
+  INT j := 20;
+  WHILE j <= 50 AND j MOD 7 /= 0 DO
+    j := j + 1
+  OD;
+  print(("Same answer via WHILE: ", j, new line))
+END

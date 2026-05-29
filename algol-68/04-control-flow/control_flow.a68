@@ -1,0 +1,28 @@
+BEGIN
+  # Counted FOR loop — print squares from 1 to 5 #
+  print(("Squares:", new line));
+  FOR i FROM 1 TO 5 DO
+    print(("  ", i, " squared = ", i * i, new line))
+  OD;
+
+  # FOR with a step — count down by 2 #
+  print(("Countdown:", new line));
+  FOR i FROM 10 BY -2 TO 0 DO
+    print(("  ", i, new line))
+  OD;
+
+  # Pure WHILE loop — collect digits of a number #
+  INT n := 12345;
+  INT digits := 0;
+  WHILE n > 0 DO
+    digits := digits + 1;
+    n := n OVER 10
+  OD;
+  print(("12345 has ", digits, " digits", new line));
+
+  # Combined FOR/WHILE — stop early when a condition fails #
+  print(("Powers of 2 below 100:", new line));
+  FOR k FROM 0 WHILE 2 ** k < 100 DO
+    print(("  2^", k, " = ", 2 ** k, new line))
+  OD
+END
