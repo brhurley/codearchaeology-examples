@@ -6,6 +6,7 @@ Code examples for Apl programming language from [CodeArchaeology.dev](https://co
 
 - [Variables and Types in APL](02-variables/) - Learn how APL handles variables, arrays, and data types — from scalars and vectors to matrices and character data
 - [Operators in APL](03-operators/) - Learn APL operators - arithmetic, comparison, logical, scalar extension, reduction, and right-to-left evaluation with practical Docker-ready examples
+- [Control Flow in APL](04-control-flow/) - Learn how APL handles control flow through array operations, conditional expressions, and the rare cases where loops are still useful
 - [Hello World in APL](01-hello-world/) - Your first APL program - the classic Hello World example with Docker setup
 
 *Auto-generated from site content*
