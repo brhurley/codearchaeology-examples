@@ -1,0 +1,21 @@
+MODULE loop_control =
+BEGIN
+
+EXTERNAL ROUTINE
+    print_int;
+
+GLOBAL ROUTINE search_demo : NOVALUE =
+BEGIN
+    LOCAL result;
+
+    ! Find the first i whose square exceeds 50; the loop
+    ! itself yields the value handed to EXITLOOP.
+    result = INCR i FROM 1 TO 100 DO
+        IF .i * .i GTR 50
+        THEN EXITLOOP .i;        ! leave the loop, yielding i
+
+    print_int(.result)           ! 8  (because 8*8 = 64 > 50)
+END;
+
+END
+ELUDOM

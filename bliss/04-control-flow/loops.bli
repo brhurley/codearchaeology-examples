@@ -1,0 +1,31 @@
+MODULE loops =
+BEGIN
+
+EXTERNAL ROUTINE
+    print_int;
+
+GLOBAL ROUTINE loops_demo : NOVALUE =
+BEGIN
+    LOCAL count, sum;
+
+    ! WHILE loop: repeat while the condition holds
+    count = 3;
+    WHILE .count GTR 0 DO
+    BEGIN
+        print_int(.count);       ! 3, 2, 1
+        count = .count - 1
+    END;
+
+    ! INCR: counted loop from 1 to 5, index 'i' is implicit
+    sum = 0;
+    INCR i FROM 1 TO 5 DO
+        sum = .sum + .i;
+    print_int(.sum);             ! 15
+
+    ! DECR: counts downward from 3 to 1
+    DECR j FROM 3 TO 1 DO
+        print_int(.j)            ! 3, 2, 1
+END;
+
+END
+ELUDOM

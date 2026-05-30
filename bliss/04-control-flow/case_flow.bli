@@ -1,0 +1,20 @@
+MODULE case_flow =
+BEGIN
+
+EXTERNAL ROUTINE
+    print_int;
+
+GLOBAL ROUTINE case_demo : NOVALUE =
+BEGIN
+    ! Walk a selector from 0 to 2 and dispatch on each value
+    INCR code FROM 0 TO 2 DO
+        CASE .code FROM 0 TO 2 OF
+        SET
+        [0]: print_int(100);
+        [1]: print_int(200);
+        [2]: print_int(300);
+        TES
+END;
+
+END
+ELUDOM

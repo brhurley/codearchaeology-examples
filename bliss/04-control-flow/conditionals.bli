@@ -1,0 +1,26 @@
+MODULE conditionals =
+BEGIN
+
+EXTERNAL ROUTINE
+    print_int;
+
+GLOBAL ROUTINE cond_demo : NOVALUE =
+BEGIN
+    LOCAL n, abs_val;
+    n = -7;
+
+    ! IF used as a statement to choose a branch
+    IF .n LSS 0
+    THEN print_int(0)        ! negative  -> print 0
+    ELSE print_int(1);       ! otherwise -> print 1
+
+    ! IF used as an expression (BLISS's "ternary")
+    abs_val = (IF .n LSS 0 THEN -.n ELSE .n);
+    print_int(.abs_val);     ! 7
+
+    ! An IF with no ELSE simply does nothing when false
+    IF .n GTR 0 THEN print_int(99)
+END;
+
+END
+ELUDOM
