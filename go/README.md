@@ -6,6 +6,7 @@ Code examples for Go programming language from [CodeArchaeology.dev](https://cod
 
 - [Variables and Types in Go](02-variables/) - Learn about variables, data types, type inference, and constants in Go with practical Docker-ready examples
 - [Operators in Go](03-operators/) - Explore arithmetic, comparison, logical, bitwise, and assignment operators in Go with practical Docker-ready examples
+- [Control Flow in Go](04-control-flow/) - Learn conditionals, switch statements, and loops in Go with practical Docker-ready examples covering if/else, switch, for loops, and loop control
 - [Hello World in Go](01-hello-world/) - Your first Go program - the classic Hello World example with Docker setup
 
 *Auto-generated from site content*
