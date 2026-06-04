@@ -1,0 +1,14 @@
+procedure main()
+    # Step a range with 'by'
+    every n := 1 to 10 by 2 do
+        writes(n, " ")
+    write()
+
+    # next skips an iteration; break ends the loop
+    every n := 1 to 20 do {
+        if n % 3 ~= 0 then next    # skip values that are not multiples of 3
+        if n > 15 then break       # stop once we pass 15
+        writes(n, " ")
+    }
+    write()
+end

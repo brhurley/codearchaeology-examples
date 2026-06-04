@@ -1,0 +1,21 @@
+procedure main()
+    s := "programming"
+    vowels := 0
+    consonants := 0
+
+    # !s generates each character of the string in turn
+    every c := !s do {
+        case c of {
+            "a": vowels +:= 1
+            "e": vowels +:= 1
+            "i": vowels +:= 1
+            "o": vowels +:= 1
+            "u": vowels +:= 1
+            default: consonants +:= 1
+        }
+    }
+
+    write("Letters:    ", *s)
+    write("Vowels:     ", vowels)
+    write("Consonants: ", consonants)
+end

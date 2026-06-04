@@ -1,0 +1,23 @@
+procedure main()
+    grade := 85
+
+    # Alternation: the condition succeeds if grade equals any listed value
+    if grade = (85 | 90 | 95) then
+        write("Honor roll score!")
+
+    # find() succeeds (returns a position) or fails — that drives the branch
+    sentence := "the quick brown fox"
+    if find("quick", sentence) then
+        write("Found 'quick' in the sentence")
+
+    # Failure is normal, not an error: the else runs because find fails
+    if find("lazy", sentence) then
+        write("Found 'lazy'")
+    else
+        write("'lazy' is not here")
+
+    # if/then/else is an expression — assign its produced value
+    n := 42
+    parity := if n % 2 = 0 then "even" else "odd"
+    write(n, " is ", parity)
+end

@@ -1,0 +1,19 @@
+procedure main()
+    n := 7
+
+    # Basic if/else: the then-branch runs when the condition succeeds
+    if n > 0 then
+        write(n, " is positive")
+    else
+        write(n, " is not positive")
+
+    # Arithmetic binds tighter than comparison: (n % 2) = 0
+    if n % 2 = 0 then
+        write(n, " is even")
+    else
+        write(n, " is odd")
+
+    # Chained comparison: 0 < n succeeds and yields n, then n < 10 runs
+    if 0 < n < 10 then
+        write(n, " is a single digit")
+end
