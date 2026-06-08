@@ -1,0 +1,23 @@
+CONDITIONALS: PROCEDURE OPTIONS(MAIN);
+   DECLARE SCORE FIXED BINARY(15);
+
+   SCORE = 85;
+
+   /* Multi-way branch with chained ELSE IF */
+   IF SCORE >= 90 THEN
+      PUT LIST('Grade: A');
+   ELSE IF SCORE >= 80 THEN
+      PUT LIST('Grade: B');
+   ELSE IF SCORE >= 70 THEN
+      PUT LIST('Grade: C');
+   ELSE
+      PUT LIST('Grade: F');
+
+   /* Compound condition runs a DO group of several statements */
+   IF SCORE >= 80 & SCORE < 90 THEN
+      DO;
+         PUT SKIP LIST('You passed with a solid grade.');
+         PUT SKIP LIST('Keep up the good work!');
+      END;
+
+END CONDITIONALS;

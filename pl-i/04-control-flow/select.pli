@@ -1,0 +1,23 @@
+SELECTDEMO: PROCEDURE OPTIONS(MAIN);
+   DECLARE DAY FIXED BINARY(15);
+
+   /* Form 1: match the control expression against WHEN values */
+   DAY = 3;
+   SELECT (DAY);
+      WHEN (1) PUT LIST('Monday');
+      WHEN (2) PUT LIST('Tuesday');
+      WHEN (3) PUT LIST('Wednesday');
+      WHEN (4) PUT LIST('Thursday');
+      WHEN (5) PUT LIST('Friday');
+      OTHERWISE PUT LIST('Weekend');
+   END;
+
+   /* Form 2: each WHEN is a full boolean condition */
+   DAY = 7;
+   SELECT;
+      WHEN (DAY >= 1 & DAY <= 5) PUT SKIP LIST('It is a weekday.');
+      WHEN (DAY = 6 | DAY = 7)   PUT SKIP LIST('It is the weekend.');
+      OTHERWISE PUT SKIP LIST('Invalid day.');
+   END;
+
+END SELECTDEMO;

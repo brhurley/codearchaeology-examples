@@ -1,0 +1,20 @@
+WHILELOOPS: PROCEDURE OPTIONS(MAIN);
+   DECLARE N FIXED BINARY(15);
+
+   /* DO WHILE tests the condition BEFORE each pass */
+   PUT LIST('Countdown with DO WHILE:');
+   N = 5;
+   DO WHILE (N > 0);
+      PUT SKIP EDIT('  N = ', N) (A, F(1));
+      N = N - 1;
+   END;
+
+   /* DO UNTIL tests the condition AFTER each pass */
+   PUT SKIP LIST('Doubling with DO UNTIL:');
+   N = 1;
+   DO UNTIL (N > 50);
+      PUT SKIP EDIT('  N = ', N) (A, F(2));
+      N = N * 2;
+   END;
+
+END WHILELOOPS;

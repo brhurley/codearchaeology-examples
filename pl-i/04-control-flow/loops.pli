@@ -1,0 +1,24 @@
+LOOPS: PROCEDURE OPTIONS(MAIN);
+   DECLARE I     FIXED BINARY(15);
+   DECLARE TOTAL FIXED BINARY(31);
+
+   /* Simple counted loop, 1 through 5 */
+   PUT LIST('Counting 1 to 5:');
+   DO I = 1 TO 5;
+      PUT SKIP EDIT('  Count = ', I) (A, F(1));
+   END;
+
+   /* Counted loop with a step using BY */
+   PUT SKIP LIST('Even numbers 2 to 10:');
+   DO I = 2 TO 10 BY 2;
+      PUT SKIP EDIT('  Even = ', I) (A, F(2));
+   END;
+
+   /* Accumulate a running total across iterations */
+   TOTAL = 0;
+   DO I = 1 TO 100;
+      TOTAL = TOTAL + I;
+   END;
+   PUT SKIP EDIT('Sum of 1 to 100 = ', TOTAL) (A, F(4));
+
+END LOOPS;
