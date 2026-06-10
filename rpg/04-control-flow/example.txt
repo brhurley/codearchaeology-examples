@@ -1,0 +1,2 @@
+CRTBNDRPG PGM(MYLIB/CTLIF) SRCSTMF('/home/user/control_flow_if.rpgle')
+CALL PGM(MYLIB/CTLIF)
