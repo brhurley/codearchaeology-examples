@@ -1,0 +1,8 @@
+*       Pattern-match success/failure driving a loop
+*       Split a sentence into words by consuming it
+        TEXT = "the quick brown fox"
+        WORD = BREAK(" ") . W
+NEXT    TEXT WORD " " =                           :F(LAST)
+        OUTPUT = W                                :(NEXT)
+LAST    OUTPUT = TEXT
+END

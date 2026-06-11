@@ -1,0 +1,9 @@
+*       Conditional assignment - SNOBOL's take on the ternary
+*       A predicate returns null on success and fails on failure,
+*       and a failed statement leaves the target unchanged.
+        N = -4
+        LABEL = "zero"
+        LABEL = GT(N, 0) "positive"
+        LABEL = LT(N, 0) "negative"
+        OUTPUT = N " is " LABEL
+END

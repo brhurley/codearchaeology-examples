@@ -1,0 +1,14 @@
+*       Conditionals in SNOBOL using comparison predicates
+*       Numeric comparison: classify a number
+        N = 7
+        GT(N, 0)                                  :S(POS)
+        EQ(N, 0)                                  :S(ZERO)F(NEG)
+POS     OUTPUT = N " is positive"                 :(STR)
+ZERO    OUTPUT = N " is zero"                     :(STR)
+NEG     OUTPUT = N " is negative"
+*       String comparison uses IDENT / DIFFER, never =
+STR     NAME = "SNOBOL"
+        IDENT(NAME, "SNOBOL")                     :S(SAME)F(DIFF)
+SAME    OUTPUT = "Name matches"                   :(END)
+DIFF    OUTPUT = "Name differs"
+END

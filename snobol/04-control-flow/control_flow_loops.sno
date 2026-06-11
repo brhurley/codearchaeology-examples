@@ -1,0 +1,15 @@
+*       Two loops driven by the success of a comparison
+*       Loop 1: countdown from 5, repeat while N > 0
+        N = 5
+DOWN    OUTPUT = N
+        N = N - 1
+        GT(N, 0)                                  :S(DOWN)
+        OUTPUT = "Liftoff!"
+*       Loop 2: accumulate a sum from 1 to 10
+        SUM = 0
+        I = 0
+UP      I = I + 1
+        SUM = SUM + I
+        LE(I, 9)                                  :S(UP)
+        OUTPUT = "Sum 1..10 = " SUM
+END

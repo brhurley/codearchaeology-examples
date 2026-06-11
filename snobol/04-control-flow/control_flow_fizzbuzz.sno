@@ -1,0 +1,12 @@
+*       FizzBuzz from 1 to 15 - looping plus multi-way branching
+        N = 0
+LOOP    N = N + 1
+        GT(N, 15)                                 :S(END)
+        EQ(REMDR(N, 15), 0)                       :S(FIZZBUZZ)
+        EQ(REMDR(N, 3), 0)                        :S(FIZZ)
+        EQ(REMDR(N, 5), 0)                        :S(BUZZ)
+        OUTPUT = N                                :(LOOP)
+FIZZBUZZ OUTPUT = "FizzBuzz"                       :(LOOP)
+FIZZ    OUTPUT = "Fizz"                            :(LOOP)
+BUZZ    OUTPUT = "Buzz"                            :(LOOP)
+END
