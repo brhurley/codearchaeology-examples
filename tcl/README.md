@@ -6,6 +6,7 @@ Code examples for Tcl programming language from [CodeArchaeology.dev](https://co
 
 - [Variables and Types in Tcl](02-variables/) - Learn how Tcl handles variables, its string-based type system, type conversions, and the everything-is-a-string philosophy in practice
 - [Operators in Tcl](03-operators/) - Learn arithmetic, comparison, logical, and string operators in Tcl and how the expr command evaluates expressions, with Docker-ready examples
+- [Control Flow in Tcl](04-control-flow/) - Learn conditionals, loops, and branching in Tcl - if/elseif/else, switch, for, while, and foreach with Docker-ready examples
 - [Hello World in Tcl](01-hello-world/) - Your first Tcl program - the classic Hello World example with Docker setup using the tclsh interpreter
 
 *Auto-generated from site content*
