@@ -1,0 +1,17 @@
+import stdlib.*;
+
+exported func main() {
+  // Build a 5-element array of even numbers: [0, 2, 4, 6, 8]
+  // The initializer {_ * 2} receives each index as `_`
+  evens = [](5, {_ * 2});
+
+  // Iterate over the elements by reference
+  foreach value in &evens {
+    println("Value: " + value);
+  }
+
+  // Iterate with both the index and the value
+  foreach [ix, value] in evens.entries() {
+    println("Index " + ix + " holds " + value);
+  }
+}

@@ -1,0 +1,31 @@
+import stdlib.*;
+
+exported func main() {
+  temperature = 18;
+
+  // Basic if / else if / else chain
+  if temperature < 0 {
+    println("Freezing");
+  } else if temperature < 15 {
+    println("Cold");
+  } else if temperature < 25 {
+    println("Comfortable");
+  } else {
+    println("Hot");
+  }
+
+  // Logical operators: and, or, not
+  hour = 9;
+  isWeekend = false;
+  if hour >= 9 and hour < 17 and not isWeekend {
+    println("Working hours");
+  }
+
+  // The mod operator tests divisibility
+  number = 12;
+  if number mod 2 == 0 {
+    println("12 is even");
+  } else {
+    println("12 is odd");
+  }
+}

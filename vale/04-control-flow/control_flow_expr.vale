@@ -1,0 +1,24 @@
+import stdlib.*;
+
+exported func main() {
+  n = 7;
+  m = 12;
+
+  // if is an expression: the chosen block's final value is assigned
+  larger =
+    if n > m {
+      n
+    } else {
+      m
+    };
+  println("The larger value is: " + larger);
+
+  // A block can do work before yielding its final value
+  label =
+    if n mod 2 == 0 {
+      "even"
+    } else {
+      "odd"
+    };
+  println(n + " is " + label);
+}
