@@ -1,0 +1,19 @@
+BEGIN
+  INT counter := 0;   # declared in the outer block - visible to procedures below #
+
+  # This procedure reaches out and modifies the outer 'counter' #
+  PROC bump = VOID:
+    counter := counter + 1;
+
+  # This procedure has its own local variable, invisible outside #
+  PROC local demo = INT:
+  BEGIN
+    INT temp := 100;   # local to this procedure only #
+    temp := temp * 2;
+    temp               # the final expression is the result #
+  END;
+
+  bump; bump; bump;
+  print(("counter after 3 bumps = ", whole(counter, 0), new line));
+  print(("local demo returns    = ", whole(local demo, 0), new line))
+END

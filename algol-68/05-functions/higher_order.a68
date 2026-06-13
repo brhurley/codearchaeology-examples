@@ -1,0 +1,17 @@
+BEGIN
+  # Takes another procedure as an argument and applies it twice #
+  PROC apply twice = (PROC (INT) INT f, INT x) INT: f(f(x));
+
+  # Two procedures we can pass around - each has mode PROC (INT) INT #
+  PROC increment = (INT n) INT: n + 1;
+  PROC double    = (INT n) INT: n * 2;
+
+  print(("apply twice(increment, 5) = ", whole(apply twice(increment, 5), 0), new line));
+  print(("apply twice(double, 5)    = ", whole(apply twice(double, 5), 0), new line));
+
+  # A procedure can also be stored in a variable and reassigned #
+  PROC (INT) INT op := increment;
+  print(("op(10) using increment    = ", whole(op(10), 0), new line));
+  op := double;
+  print(("op(10) using double       = ", whole(op(10), 0), new line))
+END

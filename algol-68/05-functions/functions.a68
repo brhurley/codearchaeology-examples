@@ -1,0 +1,15 @@
+BEGIN
+  # square: takes one INT, yields an INT #
+  PROC square = (INT x) INT: x * x;
+
+  # add: two parameters that share the same mode #
+  PROC add = (INT a, b) INT: a + b;
+
+  # greet: a VOID procedure, called only for its side effect #
+  PROC greet = (STRING name) VOID:
+    print(("Hello, ", name, "!", new line));
+
+  greet("ALGOL 68");
+  print(("square(7)  = ", whole(square(7), 0), new line));
+  print(("add(10, 5) = ", whole(add(10, 5), 0), new line))
+END

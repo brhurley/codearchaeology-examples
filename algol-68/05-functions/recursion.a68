@@ -1,0 +1,21 @@
+BEGIN
+  # Classic recursive factorial #
+  PROC factorial = (INT n) INT:
+    IF n <= 1 THEN 1 ELSE n * factorial(n - 1) FI;
+
+  # Recursive Fibonacci #
+  PROC fib = (INT n) INT:
+    IF n < 2 THEN n ELSE fib(n - 1) + fib(n - 2) FI;
+
+  FOR i FROM 1 TO 6
+  DO
+    print(("factorial(", whole(i, 0), ") = ", whole(factorial(i), 0), new line))
+  OD;
+
+  print((new line, "First 10 Fibonacci numbers:", new line));
+  FOR i FROM 0 TO 9
+  DO
+    print((whole(fib(i), 0), " "))
+  OD;
+  print((new line))
+END
