@@ -1,0 +1,21 @@
+MODULE recursion =
+BEGIN
+
+EXTERNAL ROUTINE
+    print_int;
+
+! factorial calls itself. The IF is an expression, so the whole
+! routine body is a single value-producing expression - no RETURN needed.
+ROUTINE factorial(n) =
+    IF .n LEQ 1
+    THEN 1
+    ELSE .n * factorial(.n - 1);
+
+GLOBAL ROUTINE rec_demo : NOVALUE =
+BEGIN
+    print_int(factorial(5));     ! 120
+    print_int(factorial(1))      ! 1
+END;
+
+END
+ELUDOM

@@ -1,0 +1,30 @@
+MODULE scope =
+BEGIN
+
+EXTERNAL ROUTINE
+    print_int;
+
+! OWN: a static, module-level variable shared by all routines.
+OWN
+    counter;
+
+! bump takes no parameters. LOCAL 'next' exists only for this call;
+! 'counter' is the shared OWN variable that survives between calls.
+ROUTINE bump : NOVALUE =
+BEGIN
+    LOCAL next;
+    next = .counter + 1;     ! read the shared counter into a local
+    counter = .next          ! write the new value back
+END;
+
+GLOBAL ROUTINE scope_demo : NOVALUE =
+BEGIN
+    counter = 0;             ! initialize the shared variable
+    bump();
+    bump();
+    bump();
+    print_int(.counter)      ! 3 - the OWN counter survived every call
+END;
+
+END
+ELUDOM
