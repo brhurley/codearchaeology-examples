@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-22-0" name="agents" uuid="a1b2c3d4-0000-0000-0000-000000000006">
+    <target name="agents">
+        <root class="AGENTS" feature="make"/>
+        <setting name="console_application" value="true"/>
+        <library name="base" location="$ISE_LIBRARY/library/base/base.ecf"/>
+        <cluster name="root_cluster" location="."/>
+    </target>
+</system>
