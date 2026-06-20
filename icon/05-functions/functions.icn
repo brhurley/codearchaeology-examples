@@ -1,0 +1,14 @@
+procedure main()
+    write(greet("World"))
+    write(greet())            # name is omitted -> uses the default
+    write("Sum: ", add(3, 4))
+end
+
+procedure greet(name)
+    /name := "World"          # assign only if name is null
+    return "Hello, " || name || "!"
+end
+
+procedure add(a, b)
+    return a + b
+end

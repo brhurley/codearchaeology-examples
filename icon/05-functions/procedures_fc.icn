@@ -1,0 +1,19 @@
+procedure main()
+    op := add                # store a procedure in a variable
+    write("Via variable: ", op(10, 5))
+
+    if result := safe_divide(10, 2) then
+        write("10 / 2 = ", result)
+
+    if not safe_divide(10, 0) then
+        write("Division by zero failed safely")
+end
+
+procedure add(a, b)
+    return a + b
+end
+
+procedure safe_divide(a, b)
+    if b = 0 then fail       # no value, no error
+    return a / b
+end

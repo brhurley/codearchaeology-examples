@@ -1,0 +1,13 @@
+procedure main()
+    # suspend turns squares() into a generator
+    every write(squares(5))
+
+    # Goal-directed evaluation: keep generating until one value exceeds 10
+    write("First square > 10: ", 10 < squares(5))
+end
+
+procedure squares(n)
+    local i
+    every i := 1 to n do
+        suspend i * i        # yield each square, then resume
+end

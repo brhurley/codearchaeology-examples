@@ -1,0 +1,22 @@
+global counter
+
+procedure main()
+    counter := 0
+    every 1 to 3 do
+        write("Count: ", increment())
+
+    every 1 to 3 do
+        write("Tick: ", tick())
+end
+
+procedure increment()
+    counter +:= 1            # modifies the global
+    return counter
+end
+
+procedure tick()
+    static n
+    initial n := 0           # runs only on the first call
+    n +:= 1
+    return n
+end
