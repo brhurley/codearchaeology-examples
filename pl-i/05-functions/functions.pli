@@ -1,0 +1,23 @@
+FUNCS: PROCEDURE OPTIONS(MAIN);
+
+   DECLARE RESULT FIXED BINARY(31);
+
+   /* A subroutine is invoked with the CALL statement */
+   CALL GREET;
+
+   /* A function is invoked inside an expression */
+   RESULT = RECTANGLE_AREA(5, 3);
+   PUT SKIP EDIT('Area of 5 x 3 rectangle: ', RESULT) (A, F(2));
+
+   /* Subroutine: performs an action, returns no value */
+   GREET: PROCEDURE;
+      PUT SKIP LIST('Welcome to PL/I procedures!');
+   END GREET;
+
+   /* Function: declares RETURNS and hands back a value */
+   RECTANGLE_AREA: PROCEDURE(WIDTH, HEIGHT) RETURNS(FIXED BINARY(31));
+      DECLARE (WIDTH, HEIGHT) FIXED BINARY(31);
+      RETURN(WIDTH * HEIGHT);
+   END RECTANGLE_AREA;
+
+END FUNCS;

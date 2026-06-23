@@ -1,0 +1,19 @@
+BYREF: PROCEDURE OPTIONS(MAIN);
+
+   DECLARE COUNTER FIXED BINARY(31);
+
+   COUNTER = 10;
+   PUT SKIP EDIT('Before: COUNTER = ', COUNTER) (A, F(2));
+
+   CALL DOUBLE_IT(COUNTER);   /* COUNTER is passed by reference */
+
+   PUT SKIP EDIT('After:  COUNTER = ', COUNTER) (A, F(2));
+
+   /* The parameter N aliases the caller's COUNTER, so this
+      assignment is visible after the call returns */
+   DOUBLE_IT: PROCEDURE(N);
+      DECLARE N FIXED BINARY(31);
+      N = N * 2;
+   END DOUBLE_IT;
+
+END BYREF;

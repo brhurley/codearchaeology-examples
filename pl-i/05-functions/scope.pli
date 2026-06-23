@@ -1,0 +1,22 @@
+NESTING: PROCEDURE OPTIONS(MAIN);
+
+   DECLARE BASE FIXED BINARY(31);
+
+   BASE = 100;
+
+   CALL SHOW_LOCAL;
+   CALL SHOW_SHARED;
+
+   /* Declares its own BASE - the outer BASE is shadowed here */
+   SHOW_LOCAL: PROCEDURE;
+      DECLARE BASE FIXED BINARY(31);
+      BASE = 7;
+      PUT SKIP EDIT('Inside SHOW_LOCAL,  BASE = ', BASE) (A, F(1));
+   END SHOW_LOCAL;
+
+   /* No local BASE - refers to the outer block's BASE */
+   SHOW_SHARED: PROCEDURE;
+      PUT SKIP EDIT('Inside SHOW_SHARED, BASE = ', BASE) (A, F(3));
+   END SHOW_SHARED;
+
+END NESTING;
