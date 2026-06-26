@@ -1,0 +1,2 @@
+CRTBNDRPG PGM(MYLIB/FUNCBASIC) SRCSTMF('/home/user/functions_basic.rpgle')
+CALL PGM(MYLIB/FUNCBASIC)
