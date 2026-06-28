@@ -1,0 +1,9 @@
+*       Define GREET, taking one parameter NAME
+        DEFINE('GREET(NAME)')        :(GREET_END)
+*       Function body - entry point is the label GREET
+GREET   GREET = "Hello, " NAME "!"   :(RETURN)
+GREET_END
+*       Now call it
+        OUTPUT = GREET("World")
+        OUTPUT = GREET("SNOBOL")
+END

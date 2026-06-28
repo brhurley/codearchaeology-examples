@@ -1,0 +1,10 @@
+*       Recursive factorial
+        DEFINE('FACT(N)')            :(FACT_END)
+FACT    FACT = EQ(N,0) 1             :S(RETURN)
+        FACT = N * FACT(N - 1)       :(RETURN)
+FACT_END
+*       Call the function for a few values
+        OUTPUT = "0! = " FACT(0)
+        OUTPUT = "5! = " FACT(5)
+        OUTPUT = "10! = " FACT(10)
+END

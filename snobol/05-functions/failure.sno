@@ -1,0 +1,14 @@
+*       Return the first vowel, or fail if there is none
+        DEFINE('FIRSTVOWEL(WORD)')              :(FV_END)
+FIRSTVOWEL
+        WORD ANY('aeiouAEIOU') . FIRSTVOWEL     :S(RETURN)F(FRETURN)
+FV_END
+*       The call fails when no vowel exists
+        V = FIRSTVOWEL("sky")                   :S(HAVE1)F(NONE1)
+HAVE1   OUTPUT = "sky -> " V                    :(TEST2)
+NONE1   OUTPUT = "sky has no vowel"
+TEST2   V = FIRSTVOWEL("hello")                 :S(HAVE2)F(NONE2)
+HAVE2   OUTPUT = "hello -> " V                  :(DONE)
+NONE2   OUTPUT = "hello has no vowel"
+DONE
+END

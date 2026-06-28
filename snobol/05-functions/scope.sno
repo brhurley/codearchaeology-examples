@@ -1,0 +1,10 @@
+*       DOUBLE takes parameter X and uses local TEMP
+        DEFINE('DOUBLE(X)TEMP')      :(DOUBLE_END)
+DOUBLE  TEMP = X + X
+        DOUBLE = TEMP                :(RETURN)
+DOUBLE_END
+*       A global named TEMP that must survive the call
+        TEMP = "global value"
+        OUTPUT = DOUBLE(21)
+        OUTPUT = TEMP
+END

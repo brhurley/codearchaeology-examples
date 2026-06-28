@@ -1,0 +1,7 @@
+*       Exploring SNOBOL's built-in functions
+        OUTPUT = "SIZE('SNOBOL'): " SIZE('SNOBOL')
+        OUTPUT = "REVERSE('SNOBOL'): " REVERSE('SNOBOL')
+        OUTPUT = "DUPL('ab', 3): " DUPL('ab', 3)
+        OUTPUT = "REPLACE('CAT', 'ABC', 'XYZ'): " REPLACE('CAT', 'ABC', 'XYZ')
+        OUTPUT = "TRIM('hi   '): [" TRIM('hi   ') "]"
+END
