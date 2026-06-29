@@ -1,0 +1,26 @@
+import stdlib.*;
+
+// An ordinary top-level function
+func double_it(x int) int {
+  return x * 2;
+}
+
+exported func main() {
+  // `base` is a local variable, visible only inside main
+  base = 10;
+  println("Functions in Vale");
+
+  // A lambda (anonymous function) stored in a local variable
+  increment = {(x int) x + 1};
+  print("increment(base)  = ");
+  println(increment(base));
+
+  // A lambda can capture and use surrounding local variables
+  add_base = {(x int) x + base};
+  print("add_base(5)      = ");
+  println(add_base(5));
+
+  // Ordinary functions can also be invoked with UFCS
+  print("base.double_it() = ");
+  println(base.double_it());
+}

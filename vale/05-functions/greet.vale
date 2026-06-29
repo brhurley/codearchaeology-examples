@@ -1,0 +1,11 @@
+import stdlib.*;
+
+// A function that takes one parameter and returns nothing
+func greet(name str) {
+  println("Hello, " + name + "!");
+}
+
+exported func main() {
+  greet("Vale");
+  greet("World");
+}

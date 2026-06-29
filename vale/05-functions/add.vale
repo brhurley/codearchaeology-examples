@@ -1,0 +1,27 @@
+import stdlib.*;
+
+// Explicit return
+func add(a int, b int) int {
+  return a + b;
+}
+
+// Implicit return: the last expression (no semicolon) is the result
+func square(x int) int {
+  x * x
+}
+
+exported func main() {
+  // Normal call syntax
+  sum = add(3, 4);
+  print("add(3, 4)  = ");
+  println(sum);
+
+  // UFCS: 3.add(4) is the same as add(3, 4)
+  product = 3.add(4);
+  print("3.add(4)   = ");
+  println(product);
+
+  // UFCS works with single-argument functions too
+  print("5.square() = ");
+  println(5.square());
+}

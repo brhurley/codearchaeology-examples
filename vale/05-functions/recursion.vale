@@ -1,0 +1,14 @@
+import stdlib.*;
+
+// factorial(n) = n * factorial(n - 1), with factorial(0) = factorial(1) = 1
+func factorial(n int) int {
+  if n <= 1 {
+    return 1;
+  }
+  return n * factorial(n - 1);
+}
+
+exported func main() {
+  print("factorial(5) = ");
+  println(factorial(5));
+}
