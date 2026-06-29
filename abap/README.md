@@ -6,6 +6,7 @@ Code examples for Abap programming language from [CodeArchaeology.dev](https://c
 
 - [Variables and Types in ABAP](02-variables/) - Learn about variables, data types, and type conversions in ABAP with practical Docker-ready examples using the open-abap transpiler
 - [Functions in ABAP](05-functions/) - Learn how ABAP packages reusable logic - classic FORM subroutines with PERFORM, ABAP Objects methods with IMPORTING/RETURNING parameters, default parameters, scope, and recursion
+- [I/O Operations in ABAP](06-io-operations/) - How ABAP handles input and output - the WRITE list buffer, string-template formatting, parsing input records with SPLIT and CONCATENATE, tabular output from internal tables, selection-screen input, and application-server file I/O
 - [Operators in ABAP](03-operators/) - Master arithmetic, comparison, logical, and string operators in ABAP - including business-focused features like the &&-concatenation, IS INITIAL, and string templates.
 - [Control Flow in ABAP](04-control-flow/) - Learn conditionals, loops, and branching in ABAP - including IF/ELSEIF, CASE/WHEN, DO, WHILE, LOOP AT, and the modern COND expression
 - [Hello World in ABAP](01-hello-world/) - Your first ABAP program - the classic Hello World example running on Node.js via the open-abap transpiler
