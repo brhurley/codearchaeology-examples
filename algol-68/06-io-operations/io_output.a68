@@ -1,0 +1,16 @@
+BEGIN
+  # print sends any mode to standard output; whole and fixed turn      #
+  # numbers into clean, padding-free strings (width 0 = shortest form) #
+  INT    count  = 42;
+  REAL   pi     = 3.14159;
+  BOOL   active = TRUE;
+  CHAR   grade  = "A";
+
+  print(("ALGOL 68 transput", new line));
+  print(("Count : ", whole(count, 0), new line));
+  print(("Pi    : ", fixed(pi, 0, 4), new line));
+
+  # A BOOL prints as T or F by default, so map it to readable text #
+  print(("Active: ", (active | "yes" | "no"), new line));
+  print(("Grade : ", grade, new line))
+END

@@ -1,0 +1,16 @@
+BEGIN
+  # printf marries a $...$ format with values. g inserts a value,      #
+  # l is a newline. Pre-format numbers with whole/fixed for control    #
+  INT  items = 7;
+  REAL price = 19.99;
+  REAL total = items * price;
+
+  printf(($g" units at $"g" each"l$,
+          whole(items, 0), fixed(price, 0, 2)));
+  printf(($"Total cost: $"gl$,
+          fixed(total, 0, 2)));
+
+  # printf can also take several values against repeated format items  #
+  printf(($"Line "g": "gl$, whole(1, 0), "first"));
+  printf(($"Line "g": "gl$, whole(2, 0), "second"))
+END

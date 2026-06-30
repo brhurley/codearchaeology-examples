@@ -1,0 +1,14 @@
+BEGIN
+  # read fills variables from standard input. STRING reads to end of   #
+  # line; new line in the list then steps past the line terminator     #
+  print(("Enter your name: "));
+  STRING name;
+  read((name, new line));
+
+  print(("Enter your age:  "));
+  INT age;
+  read((age, new line));
+
+  print(("Hello, ", name, "!", new line));
+  print(("Next year you will be ", whole(age + 1, 0), new line))
+END

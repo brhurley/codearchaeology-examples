@@ -1,0 +1,28 @@
+BEGIN
+  # ----- Write a report to a named file ----- #
+  # establish creates a new file for writing; open (used below) #
+  # only attaches to a file that already exists                 #
+  FILE out file;
+  IF establish(out file, "report.txt", stand out channel) /= 0 THEN
+    print(("Cannot open report.txt for writing", new line));
+    stop
+  FI;
+  put(out file, ("Sales Report", new line));
+  put(out file, ("Widgets sold: ", whole(150, 0), new line));
+  put(out file, ("Revenue: $", fixed(2998.50, 0, 2), new line));
+  close(out file);
+  print(("Wrote 3 lines to report.txt", new line));
+
+  # ----- Reopen the same file and read it back ----- #
+  FILE in file;
+  IF open(in file, "report.txt", stand in channel) /= 0 THEN
+    print(("Cannot open report.txt for reading", new line));
+    stop
+  FI;
+  STRING line;
+  TO 3 DO
+    get(in file, (line, new line));
+    print(("> ", line, new line))
+  OD;
+  close(in file)
+END
