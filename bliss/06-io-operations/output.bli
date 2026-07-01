@@ -1,0 +1,20 @@
+MODULE io_output =
+BEGIN
+
+EXTERNAL ROUTINE
+    print_header,
+    print_pair;
+
+GLOBAL ROUTINE show_squares : NOVALUE =
+BEGIN
+    LOCAL square;
+    print_header();
+    INCR i FROM 1 TO 5 DO
+    BEGIN
+        square = .i * .i;
+        print_pair(.i, .square)
+    END
+END;
+
+END
+ELUDOM

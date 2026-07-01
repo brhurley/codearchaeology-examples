@@ -1,0 +1,25 @@
+MODULE io_file =
+BEGIN
+
+EXTERNAL ROUTINE
+    open_report,
+    write_entry,
+    close_report,
+    dump_report;
+
+GLOBAL ROUTINE make_report : NOVALUE =
+BEGIN
+    LOCAL total;
+    total = 0;
+    open_report();
+    INCR i FROM 1 TO 5 DO
+    BEGIN
+        total = .total + .i;
+        write_entry(.i, .total)
+    END;
+    close_report();
+    dump_report()
+END;
+
+END
+ELUDOM

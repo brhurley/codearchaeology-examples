@@ -1,0 +1,19 @@
+MODULE io_input =
+BEGIN
+
+EXTERNAL ROUTINE
+    read_int,
+    print_result;
+
+GLOBAL ROUTINE run : NOVALUE =
+BEGIN
+    LOCAL n, fact;
+    n = read_int();
+    fact = 1;
+    INCR i FROM 1 TO .n DO
+        fact = .fact * .i;
+    print_result(.n, .fact)
+END;
+
+END
+ELUDOM
