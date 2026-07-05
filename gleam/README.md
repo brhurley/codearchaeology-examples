@@ -6,6 +6,7 @@ Code examples for Gleam programming language from [CodeArchaeology.dev](https://
 
 - [Variables and Types in Gleam](02-variables/) - Learn about let bindings, basic types, custom types, and type inference in Gleam with practical Docker-ready examples
 - [Functions in Gleam](05-functions/) - Learn how to define and use functions in Gleam - parameters, labelled arguments, anonymous functions, higher-order functions, and recursion with Docker-ready examples
+- [I/O Operations in Gleam](06-io-operations/) - Learn console output, formatted printing, file reading and writing, and Result-based I/O error handling in Gleam with Docker-ready examples
 - [Operators in Gleam](03-operators/) - Learn arithmetic, comparison, logical, and pipe operators in Gleam, including the separate operators for integers and floats
 - [Control Flow in Gleam](04-control-flow/) - Learn control flow in Gleam — the case expression that replaces if/else and switch, plus recursion and list functions in place of loops
 - [Hello World in Gleam](01-hello-world/) - Your first Gleam program - the classic Hello World example with Docker setup
