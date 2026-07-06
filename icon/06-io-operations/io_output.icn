@@ -1,0 +1,15 @@
+procedure main()
+    # write adds a newline; writes does not
+    writes("No newline here... ")
+    write("but this line ends.")
+
+    # Multiple arguments are concatenated with no separator
+    write("Sum: ", 2 + 3, " and text together")
+
+    # Numbers are converted to strings automatically
+    count := 7
+    write("Count is " || count)
+
+    # Direct output to the standard error stream
+    write(&errout, "This goes to stderr")
+end

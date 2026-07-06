@@ -1,0 +1,10 @@
+procedure main()
+    out := open("fruits.txt", "w") | stop("Cannot open fruits.txt for writing")
+
+    # every drives the generator !list, writing each element on its own line
+    every write(out, !["apple", "banana", "cherry"])
+    write(out, "Total: 3 fruits")
+
+    close(out)
+    write("Wrote fruits.txt")
+end

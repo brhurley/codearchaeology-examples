@@ -1,0 +1,12 @@
+procedure main()
+    writes("Enter your name: ")
+    name := read()
+    if /name then
+        stop("No input provided")
+    write("Hello, ", name, "!")
+
+    writes("Enter a number: ")
+    n := read()
+    # n is a string, but * converts it to a number automatically
+    write("Double is ", 2 * n)
+end

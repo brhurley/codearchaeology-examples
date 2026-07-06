@@ -1,0 +1,12 @@
+procedure main()
+    # left() left-justifies, right() right-justifies within a field width
+    write(left("Name", 10), right("Score", 8))
+    write(left("Alice", 10), right("95", 8))
+    write(left("Bob", 10), right("7", 8))
+
+    # center() centers text within the field
+    write("[", center("title", 11), "]")
+
+    # Right-justify a value in a fixed-width column
+    write("Value:", right("3.14", 8))
+end

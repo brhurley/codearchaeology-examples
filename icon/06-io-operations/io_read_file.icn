@@ -1,0 +1,11 @@
+procedure main()
+    in := open("fruits.txt", "r") | stop("Cannot open fruits.txt for reading")
+
+    count := 0
+    while line := read(in) do {
+        count +:= 1
+        write(count, ": ", line)
+    }
+    close(in)
+    write("Read ", count, " lines")
+end
