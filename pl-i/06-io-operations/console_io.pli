@@ -1,0 +1,19 @@
+CONSOLE: PROCEDURE OPTIONS(MAIN);
+
+   DECLARE NAME  CHARACTER(20) VARYING;
+   DECLARE COUNT FIXED DECIMAL(4);
+   DECLARE PRICE FIXED DECIMAL(7,2);
+
+   NAME  = 'Widget';
+   COUNT = 12;
+   PRICE = 4.50;
+
+   /* List-directed: concatenate into one clean string */
+   PUT LIST('Product: ' || NAME);
+
+   /* Edit-directed: F(w) and F(w,d) control the numeric fields */
+   PUT SKIP EDIT('Quantity:', COUNT)       (A, F(6));
+   PUT SKIP EDIT('Price:',    PRICE)       (A, F(9,2));
+   PUT SKIP EDIT('Total:',    COUNT*PRICE) (A, F(9,2));
+
+END CONSOLE;

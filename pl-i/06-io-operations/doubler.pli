@@ -1,0 +1,9 @@
+DOUBLER: PROCEDURE OPTIONS(MAIN);
+
+   DECLARE N FIXED DECIMAL(5);
+
+   PUT LIST('Enter a number: ');
+   GET LIST(N);
+   PUT SKIP EDIT('Double is:', N * 2) (A, F(6));
+
+END DOUBLER;

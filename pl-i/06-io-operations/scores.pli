@@ -1,0 +1,33 @@
+SCORES: PROCEDURE OPTIONS(MAIN);
+
+   DECLARE OUTFILE FILE STREAM OUTPUT;
+   DECLARE INFILE  FILE STREAM INPUT;
+   DECLARE NAME    CHARACTER(20) VARYING;
+   DECLARE SCORE   FIXED DECIMAL(5);
+   DECLARE TOTAL   FIXED DECIMAL(7) INIT(0);
+   DECLARE EOF     BIT(1) INIT('0'B);
+
+   /* ---- Write three records to scores.txt ---- */
+   OPEN FILE(OUTFILE) TITLE('scores.txt');
+   PUT FILE(OUTFILE) SKIP LIST('Alice', 95);
+   PUT FILE(OUTFILE) SKIP LIST('Bob',   82);
+   PUT FILE(OUTFILE) SKIP LIST('Carol', 78);
+   CLOSE FILE(OUTFILE);
+
+   /* ---- Read them back, echo each, total the scores ---- */
+   PUT LIST('Score Report');
+
+   ON ENDFILE(INFILE) EOF = '1'B;
+
+   OPEN FILE(INFILE) TITLE('scores.txt');
+   GET FILE(INFILE) LIST(NAME, SCORE);        /* priming read */
+   DO WHILE (EOF = '0'B);
+      PUT SKIP EDIT(NAME, SCORE) (A(6), F(5));
+      TOTAL = TOTAL + SCORE;
+      GET FILE(INFILE) LIST(NAME, SCORE);     /* next record */
+   END;
+   CLOSE FILE(INFILE);
+
+   PUT SKIP EDIT('Total score:', TOTAL) (A, F(5));
+
+END SCORES;
