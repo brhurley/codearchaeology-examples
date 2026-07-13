@@ -6,6 +6,7 @@ Code examples for Scala programming language from [CodeArchaeology.dev](https://
 
 - [Variables and Types in Scala](02-variables/) - Learn about variables, immutability, type inference, and the Scala type system with practical Docker-ready examples
 - [Functions in Scala](05-functions/) - Learn how to define and use functions in Scala - methods, parameters, default arguments, recursion, higher-order functions, and closures with Docker-ready examples
+- [I/O Operations in Scala](06-io-operations/) - Learn console input, formatted output, and file reading and writing in Scala with Source, Using, and Try for safe resource handling - with Docker-ready examples
 - [Operators in Scala](03-operators/) - Learn arithmetic, comparison, logical, and bitwise operators in Scala, plus how every operator is really a method call
 - [Control Flow in Scala](04-control-flow/) - Master conditionals, pattern matching, loops, and for-comprehensions in Scala with practical Docker-ready examples
 - [Hello World in Scala](01-hello-world/) - Your first Scala program - the classic Hello World example with Docker setup
