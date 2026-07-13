@@ -1,0 +1,7 @@
+CREATE TABLE customer (
+  custid   DECIMAL(7,0) PRIMARY KEY,
+  custname CHAR(30),
+  balance  DECIMAL(11,2)
+);
+INSERT INTO customer VALUES (1001, 'Acme Corp',  2500.00);
+INSERT INTO customer VALUES (1002, 'Globex Inc', 1750.50);
