@@ -6,6 +6,7 @@ Code examples for Snobol programming language from [CodeArchaeology.dev](https:/
 
 - [Variables and Types in SNOBOL](02-variables/) - Learn how SNOBOL handles dynamically typed variables, automatic conversions, and pattern values as first-class data
 - [Functions in SNOBOL](05-functions/) - Learn how to define, call, and return from functions in SNOBOL, including recursion, local scope, built-in functions, and success/failure returns
+- [I/O Operations in SNOBOL](06-io-operations/) - Learn console input, file reading and writing through variable association, and formatted output in SNOBOL with Docker-ready examples
 - [Operators in SNOBOL](03-operators/) - Learn arithmetic, comparison, and pattern operators in SNOBOL - including how comparisons work as success/failure predicates with Docker-ready examples
 - [Control Flow in SNOBOL](04-control-flow/) - Learn how SNOBOL drives program flow with success/failure, conditional gotos, comparison predicates, and pattern-matching loops
 - [Hello World in SNOBOL](01-hello-world/) - Your first SNOBOL program - the classic Hello World example with Docker setup

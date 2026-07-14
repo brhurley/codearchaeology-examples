@@ -1,0 +1,13 @@
+*       Read lines from standard input until end of file
+*       TERMINAL writes to standard error, keeping status
+*       messages out of piped or redirected output
+        TERMINAL = "Reading from standard input..."
+        N = 0
+        TOTAL = 0
+LOOP    LINE = TRIM(INPUT)                        :F(DONE)
+        N = N + 1
+        TOTAL = TOTAL + LINE
+        OUTPUT = "Line " N ": " LINE              :(LOOP)
+DONE    OUTPUT = "Read " N " lines"
+        OUTPUT = "Total = " TOTAL
+END

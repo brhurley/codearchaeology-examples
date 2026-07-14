@@ -1,0 +1,19 @@
+*       Columnar output built from DUPL and SIZE
+*       LJ(S,W) left-justifies S in a field W wide
+        DEFINE("LJ(S,W)")                         :(LJ.END)
+LJ      LJ = S DUPL(" ", W - SIZE(S))             :(RETURN)
+LJ.END
+*       RJ(S,W) right-justifies S in a field W wide
+        DEFINE("RJ(S,W)")                         :(RJ.END)
+RJ      RJ = DUPL(" ", W - SIZE(S)) S             :(RETURN)
+RJ.END
+*       Print a small report with aligned columns
+        OUTPUT = LJ("ITEM",10) RJ("COST",6)
+        OUTPUT = DUPL("-",16)
+        OUTPUT = LJ("cards",10) RJ(75,6)
+        OUTPUT = LJ("tape",10) RJ(1250,6)
+        OUTPUT = LJ("printer",10) RJ(9,6)
+        OUTPUT = DUPL("-",16)
+        TOTAL = 75 + 1250 + 9
+        OUTPUT = LJ("TOTAL",10) RJ(TOTAL,6)
+END

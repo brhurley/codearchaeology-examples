@@ -1,0 +1,16 @@
+*       Write a file by assigning to an associated variable
+        OUTPUT(.LOG,20,,"journal.txt")
+        LOG = "day 1: learned OUTPUT"
+        LOG = "day 2: learned INPUT"
+        LOG = "day 3: learned file association"
+*       Close unit 20 so the lines are flushed to disk
+        ENDFILE(20)
+*       Read the file back, numbering each line
+        INPUT(.LINE,21,,"journal.txt")
+        N = 0
+READ    TEXT = TRIM(LINE)                         :F(EOF)
+        N = N + 1
+        OUTPUT = N ": " TEXT                      :(READ)
+EOF     ENDFILE(21)
+        OUTPUT = "journal.txt held " N " lines"
+END
