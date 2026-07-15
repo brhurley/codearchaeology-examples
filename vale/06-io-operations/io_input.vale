@@ -1,0 +1,10 @@
+import stdlib.*;
+import stdlib.stdin.*;
+
+exported func main() {
+  println("Enter two integers:");
+  a = stdinReadInt();
+  b = stdinReadInt();
+  println("a + b = " + str(a + b));
+  println("a * b = " + str(a * b));
+}

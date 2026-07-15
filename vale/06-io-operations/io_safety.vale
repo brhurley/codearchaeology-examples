@@ -1,0 +1,19 @@
+import stdlib.*;
+import stdlib.path.*;
+
+// Read and report a file only if it actually exists
+func describe(path_str str) {
+  p = Path(path_str);
+  if p.exists() {
+    println(path_str + " exists (" + str(p.readAsString().len()) + " bytes)");
+  } else {
+    println(path_str + " is missing; skipping read");
+  }
+}
+
+exported func main() {
+  Path("notes.txt").writeString("generational references\n");
+
+  describe("notes.txt");
+  describe("missing.txt");
+}

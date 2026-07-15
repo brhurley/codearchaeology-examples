@@ -1,0 +1,13 @@
+import stdlib.*;
+import stdlib.path.*;
+
+exported func main() {
+  // writeString creates the file, or overwrites it if it exists
+  journal = Path("journal.txt");
+  journal.writeString("Day 1: found the ruins\nDay 2: deciphered the tablets\n");
+  println("wrote " + journal.name());
+
+  // readAsString returns the whole file as one str
+  contents = journal.readAsString();
+  print(contents);
+}

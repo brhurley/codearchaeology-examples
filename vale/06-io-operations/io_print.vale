@@ -1,0 +1,20 @@
+import stdlib.*;
+
+exported func main() {
+  // print writes without a newline; println ends the line
+  print("Loading");
+  print("...");
+  println("done");
+
+  // println accepts int and bool values directly
+  println(42);
+  println(true);
+
+  // Formatted output is built with + and str()
+  rows = 3;
+  cols = 4;
+  println("grid: " + str(rows) + " x " + str(cols) + " = " + str(rows * cols) + " cells");
+
+  // \n embeds a newline inside a single string literal
+  println("first line\nsecond line");
+}
