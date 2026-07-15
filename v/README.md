@@ -6,6 +6,7 @@ Code examples for V programming language from [CodeArchaeology.dev](https://code
 
 - [Variables and Types in V (Vlang)](02-variables/) - Learn how V handles variables, primitive types, immutability, type inference, and conversions with practical Docker-ready examples
 - [Functions in V (Vlang)](05-functions/) - Learn how to define and use functions in V (Vlang) - parameters, multiple return values, recursion, closures, higher-order functions, and struct methods with Docker-ready examples
+- [I/O Operations in V (Vlang)](06-io-operations/) - Learn console input, formatted output, and file reading and writing in V, with Result-based error handling and Docker-ready examples
 - [Operators in V (Vlang)](03-operators/) - Learn arithmetic, comparison, logical, assignment, and bitwise operators in V with practical Docker-ready examples
 - [Control Flow in V (Vlang)](04-control-flow/) - Learn conditionals, match expressions, and loops in V with practical Docker-ready examples covering if/else, match, the unified for loop, and loop control
 - [Hello World in V](01-hello-world/) - Your first V program - the classic Hello World example with Docker setup
